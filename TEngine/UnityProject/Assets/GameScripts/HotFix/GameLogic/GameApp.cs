@@ -35,7 +35,7 @@ public partial class GameApp
    
     private static void StartGameLogic()
     {
-        GameEvent.Get<ILoginUI>().ShowLoginUI();
+        // GameEvent.Get<ILoginUI>().ShowLoginUI();//触发登录UI事件
         ConfigSystem.Instance.Load();
         foreach (var item in ConfigSystem.Instance.Tables.Tb.DataMap)
         {

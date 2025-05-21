@@ -49,7 +49,7 @@ namespace GameLogic
         {
             base.RegisterEvent();
             AddUIEvent(1,Btn1);
-            AddUIEvent(2,Btn2);
+            AddUIEvent(5,Btn2);
         }
 
         private void OnClick1Btn()
@@ -58,14 +58,14 @@ namespace GameLogic
         }
         private void OnClick2Btn()
         {
-            GameEvent.Send(2);
+            GameEvent.Send(5);
         }
 
         private void Btn1()
         {
             Log.Debug("Btn1");
             GameModule.UI.ShowUIAsync<BattleMainUI>();
-            GameModule.Scene.LoadScene("hs");
+            // GameModule.Scene.LoadScene("hs");
             isHide = false;
         }
 

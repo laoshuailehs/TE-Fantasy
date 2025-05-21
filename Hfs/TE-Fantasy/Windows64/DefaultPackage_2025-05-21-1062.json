@@ -7,8 +7,8 @@
     "BuildBundleType": 2,
     "BuildPipeline": "BuiltinBuildPipeline",
     "PackageName": "DefaultPackage",
-    "PackageVersion": "2025-05-21-1019",
-    "PackageNote": "2025/5/21 16:59:30",
+    "PackageVersion": "2025-05-21-1062",
+    "PackageNote": "2025/5/21 17:42:37",
     "AssetList": [
         {
             "Address": "Cube",
@@ -240,20 +240,20 @@
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "UnityCRC": 3495202186,
-            "FileHash": "6c5e6350110fad2b55ef434293b5fc59",
-            "FileCRC": "fef89471",
-            "FileSize": 1637486,
+            "UnityCRC": 541102579,
+            "FileHash": "3ec0a7ca665b97af901dd42085a9564d",
+            "FileCRC": "2f43cb2f",
+            "FileSize": 1637708,
             "Encrypted": false,
             "Tags": [],
             "DependBundleIDs": []
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_scenes.bundle",
-            "UnityCRC": 3787126402,
-            "FileHash": "a1a3157d10c197ed0fc8f21cb6c41901",
-            "FileCRC": "ed09b4f9",
-            "FileSize": 51224,
+            "UnityCRC": 584537615,
+            "FileHash": "fcf822ca26ee8815c8f49d8b67cb1033",
+            "FileCRC": "89fae5a7",
+            "FileSize": 51972,
             "Encrypted": false,
             "Tags": [],
             "DependBundleIDs": []
