@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 2407312541
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: defaultpackage_assets_assetraw_actor.bundle
+      Dependencies: {}
+    Info_1:
+      Name: defaultpackage_assets_assetraw_configs.bundle
+      Dependencies: {}
+    Info_2:
+      Name: defaultpackage_assets_assetraw_dll.bundle
+      Dependencies: {}
+    Info_3:
+      Name: defaultpackage_assets_assetraw_materials.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_unityshaders.bundle
+    Info_4:
+      Name: defaultpackage_assets_assetraw_scenes.bundle
+      Dependencies: {}
+    Info_5:
+      Name: defaultpackage_assets_assetraw_ui.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_assets_assetraw_uiraw_atlas_battle.bundle
+    Info_6:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_battle.bundle
+      Dependencies: {}
+    Info_7:
+      Name: defaultpackage_unityshaders.bundle
+      Dependencies: {}
