@@ -1,7 +1,13 @@
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
+using GameConfig;
+using GameConfig.ybtest;
 using GameLogic;
 using TEngine;
+using TEngine.Localization.SimpleJSON;
+using UnityEngine;
+
 #pragma warning disable CS0436
 
 
@@ -26,10 +32,20 @@ public partial class GameApp
         Utility.Unity.AddDestroyListener(Release);
         StartGameLogic();
     }
-    
+   
     private static void StartGameLogic()
     {
         GameEvent.Get<ILoginUI>().ShowLoginUI();
+        ConfigSystem.Instance.Load();
+        foreach (var item in ConfigSystem.Instance.Tables.Tb.DataMap)
+        {
+            Log.Info(item.Value.Id + " |" + item.Value.Desc);
+        }
+
+        foreach (var item in ConfigSystem.Instance.Tables.TbItem.DataMap)
+        {
+            Log.Debug(item.Value.Id + " |" + item.Value.Name+ " |" +item.Value.Desc);
+        }
         GameModule.UI.ShowUIAsync<LoginUI>();
     }
     

@@ -23,7 +23,9 @@ namespace GameLogic
         #region 事件
         private void OnClickLoginBtn()
         {
-            
+            GameModule.Scene.LoadScene("hs");
+            GameModule.UI.ShowUIAsync<HsTestUI>();
+            this.Close();
         }
         #endregion
         
