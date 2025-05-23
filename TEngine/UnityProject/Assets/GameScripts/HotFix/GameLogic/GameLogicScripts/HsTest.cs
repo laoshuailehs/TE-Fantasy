@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameConfig.ybtest;
 using TEngine;
 using UnityEngine;
 
@@ -8,11 +9,11 @@ namespace GameLogic
 {
     public class HsTest : MonoBehaviour
     {
+        
         // Start is called before the first frame update
         void Start()
         {
             GameEvent.AddEventListener(ILoginUI_Event.ShowLoginUI, OnShowLoginUI);
-            Log.Debug(ILoginUI_Event.ShowLoginUI);
         }
 
         private void OnDestroy()

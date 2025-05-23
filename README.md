@@ -51,3 +51,30 @@
             Log.Debug(item.Value.Id + " |" + item.Value.Desc);
         }
 ```
+
+## MySQL测试 out
+1. 报错Client does not support authentication protocol requested by server; consider upgrading MySQL client 解决方法：cmd运行mysql 输入指令
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';`
+`FLUSH PRIVILEGES;`
+2. 报错KeyNotFoundException: The given key 'utf8mb4' was not present in the dictionary. 解决方法：更换MySql.Data.dll
+点击链接 [Mysql.Data.dll](https://cn.dll-files.com/mysql.data.dll.html) 重新下载驱动包，下载第三个然后解压进行替换即可
+
+## MongoDB
+1. 下载MongoDB 和 MongoDBshll [教程](https://blog.csdn.net/tell_me_why0/article/details/139521305)
+2. [使用方法](https://www.runoob.com/mongodb/mongodb-dropdatabase.html)
+
+### MongoDB主要用法
+```c#
+//创建数据库 use hsgamedb
+//删除数据库 db.dropDatabase
+//创建集合（表）db.createCollection("gameLogin")
+//删除集合 db.gameLogin.drop()
+//集合插入数据 db.gameLogin.insertOne({username:"hs",password:123456})
+//查看数据库 show dbs
+```
+unity 连接mongoDB 示例在[LoginUI.cs](./TEngine/UnityProject/Assets/GameScripts/HotFix/GameLogic/UI/LoginUI/LoginUI.cs)中
+
+
+## YooAsset打包问题，ab包有问题导致图片不显示，场景等物体变紫色
+1. 把图片等资源删除，重新加载进来，新建换一个目录，在yooasset中设置好重新打包。
+2. 场景等物体删除在重新打包

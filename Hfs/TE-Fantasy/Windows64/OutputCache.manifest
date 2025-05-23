@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3171717216
+CRC: 1523239783
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -15,12 +15,17 @@ AssetBundleManifest:
       Name: defaultpackage_assets_assetraw_dll.bundle
       Dependencies: {}
     Info_4:
-      Name: defaultpackage_assets_assetraw_scenes.bundle
+      Name: defaultpackage_assets_assetraw_materials.bundle
       Dependencies: {}
     Info_5:
+      Name: defaultpackage_assets_assetraw_scenes.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_assets_assetraw_actor.bundle
+        Dependency_1: defaultpackage_assets_assetraw_materials.bundle
+    Info_6:
       Name: defaultpackage_assets_assetraw_ui.bundle
       Dependencies:
-        Dependency_0: defaultpackage_assets_assetraw_uiraw_atlas_battle.bundle
-    Info_6:
-      Name: defaultpackage_assets_assetraw_uiraw_atlas_battle.bundle
+        Dependency_0: defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle
+    Info_7:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle
       Dependencies: {}
