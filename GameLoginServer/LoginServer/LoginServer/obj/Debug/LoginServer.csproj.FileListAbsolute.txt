@@ -1,0 +1,11 @@
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\LoginServer.exe.config
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\LoginServer.exe
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\LoginServer.pdb
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\obj\Debug\LoginServer.csproj.AssemblyReference.cache
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\obj\Debug\LoginServer.csproj.SuggestedBindingRedirects.cache
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\obj\Debug\LoginServer.Properties.Resources.resources
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\obj\Debug\LoginServer.csproj.GenerateResource.cache
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\obj\Debug\LoginServer.csproj.CoreCompileInputs.cache
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\obj\Debug\LoginServer.exe
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\obj\Debug\LoginServer.pdb
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\obj\Debug\LoginServer.Form1.resources

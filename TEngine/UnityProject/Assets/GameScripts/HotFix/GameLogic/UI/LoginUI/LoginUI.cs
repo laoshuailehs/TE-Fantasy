@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading.Tasks;
 // using MongoDB.Bson;
 // using MongoDB.Driver;
 using UnityEngine;
@@ -23,6 +26,10 @@ namespace GameLogic
             _btnRegistration = FindChildComponent<Button>("m_btnRegistration");
             _btnLogin.onClick.AddListener(OnClickLoginBtn);
             _btnRegistration.onClick.AddListener(OnClickRegistration);
+            
+            string serverIp = "127.0.0.1"; // 服务器 IP 地址
+            int port = 8017;             // 服务器监听端口
+            ConnectToServer(serverIp, port);
         }
         #endregion
         
@@ -34,6 +41,7 @@ namespace GameLogic
         }
 
         #region 事件
+        private TcpClient tcpClient;
         private void OnClickLoginBtn()
         {
             //读取luban表数据
@@ -54,13 +62,14 @@ namespace GameLogic
             // QueryData(_inputAccount.text, _inputPassword.text);
             
             //发送服务器请求，服务器验证登入信息
-            
-            GameModule.Scene.LoadScene("Game");
-            GameModule.UI.ShowUIAsync<HsTestUI>();
-            this.Close();
-            
-        }
+            SendLoginRequest(_inputAccount.text, _inputPassword.text);
 
+
+            // GameModule.Scene.LoadScene("Game");
+            // GameModule.UI.ShowUIAsync<HsTestUI>();
+            // this.Close();
+
+        }
         private void OnClickRegistration()
         {
             //读取mongoDB数据库 
@@ -164,6 +173,80 @@ namespace GameLogic
         // }
         
         #endregion
+
+        #region MyRegion
+        
+        // 连接服务器按钮点击事件
+        private void ConnectToServer(string serverIp, int port)
+        {
+            try
+            {
+                tcpClient = new TcpClient();
+                tcpClient.Connect(serverIp, port);
+
+                Log.Info("成功连接到服务器！");
+                // 可选：启动接收服务器消息的任务
+                Task.Run(() => ReceiveMessages());
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"连接服务器失败: {ex.Message}");
+            }
+        }
+
+        
+        // 发送登录请求示例方法
+        private void SendLoginRequest(string username, string password)
+        {
+            if (tcpClient != null && tcpClient.Connected)
+            {
+                string loginData = $"LOGIN:{username}:{password}"; // 构造登录数据包
+                byte[] data = Encoding.UTF8.GetBytes(loginData);
+                
+                NetworkStream stream = tcpClient.GetStream();
+                stream.Write(data, 0, data.Length);
+            }
+            else
+            {
+                Log.Error("未连接到服务器");
+            }
+        }
+
+        // 接收服务器消息
+        private void ReceiveMessages()
+        {
+            try
+            {
+                NetworkStream stream = tcpClient.GetStream();
+                byte[] buffer = new byte[1024];
+
+                while (true)
+                {
+                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
+                    if (bytesRead == 0) break; // 连接关闭
+
+                    string response = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                    Log.Info($"收到服务器响应: {response}");
+                    if (response.Equals("1"))
+                    {
+                        GameModule.Scene.LoadScene("Game");
+                        GameModule.UI.ShowUIAsync<HsTestUI>();
+                        this.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"接收服务器消息时出错: {ex.Message}");
+            }
+            finally
+            {
+                tcpClient.Close();
+            }
+        }
+        
+        #endregion
+        
         
         protected override void Close()
         {
