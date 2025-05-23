@@ -18,6 +18,10 @@ namespace GameLogic
         private InputField _inputPassword;
         private Button _btnLogin;
         private Button _btnRegistration;
+        private bool canLogin;
+        
+        string serverIp = "127.0.0.1"; // 服务器 IP 地址
+        int port = 8017;             // 服务器监听端口
         protected override void ScriptGenerator()
         {
             _inputAccount = FindChildComponent<InputField>("m_inputAccount");
@@ -27,14 +31,21 @@ namespace GameLogic
             _btnLogin.onClick.AddListener(OnClickLoginBtn);
             _btnRegistration.onClick.AddListener(OnClickRegistration);
             
-            string serverIp = "127.0.0.1"; // 服务器 IP 地址
-            int port = 8017;             // 服务器监听端口
-            ConnectToServer(serverIp, port);
         }
         #endregion
-        
-        
-        
+
+        protected override void OnUpdate()
+        {
+            base.OnUpdate();
+            _hasOverrideUpdate = true;
+            if (canLogin)
+            {
+                GameModule.Scene.LoadScene("hs");
+                GameModule.UI.ShowUIAsync<HsTestUI>();
+                this.Close();
+            }
+        }
+
         protected override void OnCreate()
         {
             base.OnCreate();
@@ -62,6 +73,7 @@ namespace GameLogic
             // QueryData(_inputAccount.text, _inputPassword.text);
             
             //发送服务器请求，服务器验证登入信息
+            ConnectToServer(serverIp, port);
             SendLoginRequest(_inputAccount.text, _inputPassword.text);
 
 
@@ -174,7 +186,7 @@ namespace GameLogic
         
         #endregion
 
-        #region MyRegion
+        #region 发送服务器请求测试
         
         // 连接服务器按钮点击事件
         private void ConnectToServer(string serverIp, int port)
@@ -200,7 +212,7 @@ namespace GameLogic
         {
             if (tcpClient != null && tcpClient.Connected)
             {
-                string loginData = $"LOGIN:{username}:{password}"; // 构造登录数据包
+                string loginData = $"{username},{password}"; // 构造登录数据包
                 byte[] data = Encoding.UTF8.GetBytes(loginData);
                 
                 NetworkStream stream = tcpClient.GetStream();
@@ -229,9 +241,11 @@ namespace GameLogic
                     Log.Info($"收到服务器响应: {response}");
                     if (response.Equals("1"))
                     {
-                        GameModule.Scene.LoadScene("Game");
-                        GameModule.UI.ShowUIAsync<HsTestUI>();
-                        this.Close();
+                        canLogin = true;
+                    }
+                    else
+                    {
+                        Log.Info("账号或密码错误,登录失败");
                     }
                 }
             }

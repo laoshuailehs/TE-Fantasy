@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
+using MongoDB.Bson;
+using MongoDB.Driver;
 
 namespace LoginServer
 {
@@ -23,10 +25,12 @@ namespace LoginServer
         private TcpListener tcpListener;
         private bool isServerRunning = false;
         
+        int port = 8017; // 监听端口号，可以根据需要修改
+        IPAddress  ip = IPAddress.Parse("127.0.0.1");
+        MongoClient client = new MongoClient("mongodb://localhost:27017");
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            int port = 8017; // 监听端口号，可以根据需要修改
-            IPAddress  ip = IPAddress.Parse("127.0.0.1");
             try
             {
                 // 初始化 TcpListener
@@ -105,12 +109,26 @@ namespace LoginServer
         private string ProcessLoginRequest(string request)
         {
             // 根据实际需求解析登录请求并返回响应
-            Console.WriteLine($"收到登录请求: {request}");
             LogText.Text  += $"收到登录请求: {request}\r\n";
             //去mongoDB数据库查找是否有此用户
+            var database = client.GetDatabase("hsgamedb");
+            var collection = database.GetCollection<BsonDocument>("gameLogin");
+            var documents = collection.Find(new BsonDocument()).ToList();
+            foreach (var document in documents)
+            {
+                LogText.Text  += $"{document}\r\n";
+                LogText.Text  += $"{document["username"]}+{document["password"]}\r\n";
+            }
+            string[] parts = request.Split(',');
+            if(parts[0]=="")return "0";
             
-    
-            return "1"; // 示例响应
+            var filter=Builders<BsonDocument>.Filter.Eq("username", parts[0]);
+            var result = collection.Find(filter).ToList();
+            
+            if(result[0]["username"]==parts[0]&&result[0]["password"].ToString()==parts[1])return "1";
+            else
+                return "0";
+            
         }
         
         private void StopServerLogin()
