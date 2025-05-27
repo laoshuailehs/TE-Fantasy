@@ -46,7 +46,7 @@ public partial class GameApp
         {
             Log.Debug(item.Value.Id + " |" + item.Value.Name+ " |" +item.Value.Desc);
         }
-        GameModule.UI.ShowUIAsync<LoginUI>();
+        GameModule.UI.ShowUIAsync<LoginUI>();//测试界面
     }
     
     private static void Release()

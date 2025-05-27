@@ -42,3 +42,10 @@ E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\System.Securi
 E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\System.Text.Encoding.CodePages.xml
 E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\obj\Debug\LoginServer.csproj.CopyComplete
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\UniTask.dll
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\UniTask.xml
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\JsonConverter.Abstractions.dll
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\JsonConverter.Newtonsoft.Json.dll
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\Newtonsoft.Json.dll
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\Stef.Validation.dll
+E:\HS\TE-Fantasy\GameLoginServer\LoginServer\LoginServer\bin\Debug\Newtonsoft.Json.xml

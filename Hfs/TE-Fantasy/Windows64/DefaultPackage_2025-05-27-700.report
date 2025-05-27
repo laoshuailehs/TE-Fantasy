@@ -2,14 +2,14 @@
     "Summary": {
         "YooVersion": "2.3.8",
         "UnityVersion": "2021.3.28f1",
-        "BuildDate": "2025/5/23 15:29:54",
-        "BuildSeconds": 1,
+        "BuildDate": "2025/5/27 11:40:09",
+        "BuildSeconds": 5,
         "BuildTarget": 19,
         "BuildPipeline": "BuiltinBuildPipeline",
         "BuildBundleType": 2,
         "BuildPackageName": "DefaultPackage",
-        "BuildPackageVersion": "2025-05-23-929",
-        "BuildPackageNote": "2025/5/23 15:29:53",
+        "BuildPackageVersion": "2025-05-27-700",
+        "BuildPackageNote": "2025/5/27 11:40:03",
         "UniqueBundleName": true,
         "EnableAddressable": true,
         "LocationToLower": false,
@@ -33,7 +33,7 @@
         "AssetFileTotalCount": 26,
         "MainAssetTotalCount": 26,
         "AllBundleTotalCount": 8,
-        "AllBundleTotalSize": 1803751,
+        "AllBundleTotalSize": 1802838,
         "EncryptedBundleTotalCount": 0,
         "EncryptedBundleTotalSize": 0
     },
@@ -84,7 +84,7 @@
             "AssetGUID": "7fb892396cfde944e85057744fcb4296",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 1638436,
+            "MainBundleSize": 1638547,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -94,7 +94,7 @@
             "AssetGUID": "a5487586cd26d1346a724613b29dd483",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 1638436,
+            "MainBundleSize": 1638547,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -104,7 +104,7 @@
             "AssetGUID": "fc80c01afa0f57f4f8e0a7d814aca1d1",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 1638436,
+            "MainBundleSize": 1638547,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -114,7 +114,7 @@
             "AssetGUID": "369b3d85fc39e0d4c916b166f98fcb51",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 1638436,
+            "MainBundleSize": 1638547,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -124,7 +124,7 @@
             "AssetGUID": "c3e2ab26747aca14e8e82e0767eb68ae",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 1638436,
+            "MainBundleSize": 1638547,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -134,7 +134,7 @@
             "AssetGUID": "077b3b7aa4778d744aed75214ab3cdb9",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 1638436,
+            "MainBundleSize": 1638547,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -144,7 +144,7 @@
             "AssetGUID": "c16149fda4da6a84fbd429166f7235cf",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 1638436,
+            "MainBundleSize": 1638547,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -154,7 +154,7 @@
             "AssetGUID": "9041d7a7e02bd734d889a9c8cd18718d",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 1638436,
+            "MainBundleSize": 1638547,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -174,7 +174,7 @@
             "AssetGUID": "ac3916f75a54641478b97956dac7f97d",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_scenes.bundle",
-            "MainBundleSize": 53181,
+            "MainBundleSize": 52157,
             "DependAssets": [
                 {
                     "AssetPath": "Assets/AssetRaw/Actor/Cube.prefab",
@@ -196,7 +196,7 @@
             "AssetGUID": "0dbd5177f8fcea546b61a0fafa03dd4f",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_scenes.bundle",
-            "MainBundleSize": 53181,
+            "MainBundleSize": 52157,
             "DependAssets": [
                 {
                     "AssetPath": "Assets/AssetRaw/Materials/cube.mat",
@@ -416,10 +416,10 @@
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "FileName": "109083dbed495a3111117abe62764e29.bundle",
-            "FileHash": "109083dbed495a3111117abe62764e29",
-            "FileCRC": "8875aa31",
-            "FileSize": 1638436,
+            "FileName": "3030c0e74e24d05756b873a52c7a8f32.bundle",
+            "FileHash": "3030c0e74e24d05756b873a52c7a8f32",
+            "FileCRC": "1ec231a4",
+            "FileSize": 1638547,
             "Encrypted": false,
             "Tags": [],
             "DependBundles": [],
@@ -480,10 +480,10 @@
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_scenes.bundle",
-            "FileName": "9449fbf03234e6fe10ccabb24045618a.bundle",
-            "FileHash": "9449fbf03234e6fe10ccabb24045618a",
-            "FileCRC": "573538ac",
-            "FileSize": 53181,
+            "FileName": "5667de3382d6d3a377fbf0da4688f655.bundle",
+            "FileHash": "5667de3382d6d3a377fbf0da4688f655",
+            "FileCRC": "fdf06862",
+            "FileSize": 52157,
             "Encrypted": false,
             "Tags": [],
             "DependBundles": [
