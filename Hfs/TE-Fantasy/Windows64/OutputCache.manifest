@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1270179908
+CRC: 4189448256
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -16,7 +16,9 @@ AssetBundleManifest:
       Dependencies: {}
     Info_4:
       Name: defaultpackage_assets_assetraw_materials.bundle
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle
+        Dependency_1: defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle
     Info_5:
       Name: defaultpackage_assets_assetraw_scenes.bundle
       Dependencies:
@@ -28,4 +30,10 @@ AssetBundleManifest:
         Dependency_0: defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle
     Info_7:
       Name: defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle
+      Dependencies: {}
+    Info_8:
+      Name: defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle
+      Dependencies: {}
+    Info_9:
+      Name: defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle
       Dependencies: {}

@@ -78,3 +78,11 @@ unity 连接mongoDB 示例在[LoginUI.cs](./TEngine/UnityProject/Assets/GameScri
 ## YooAsset打包问题，ab包有问题导致图片不显示，场景等物体变紫色
 1. 把图片等资源删除，重新加载进来，新建换一个目录，在yooasset中设置好重新打包。
 2. 场景等物体删除在重新打包
+
+## 网络模块 没有 测
+
+## Socket
+[服务器](./GameLoginServer/ServerLearn/ServerLearn/Form1.cs)  
+
+[客户端](./GameLoginServer/ClientTest/ClientTest/Form1.cs)
+

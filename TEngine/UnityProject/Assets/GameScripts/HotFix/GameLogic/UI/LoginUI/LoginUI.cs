@@ -79,7 +79,7 @@ namespace GameLogic
             // SendLoginRequest(_inputAccount.text, _inputPassword.text);
 
             // MainTest().Forget();
-
+            
             canLogin = true;
 
 
