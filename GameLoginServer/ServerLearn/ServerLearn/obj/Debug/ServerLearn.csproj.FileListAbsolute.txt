@@ -1,0 +1,11 @@
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\bin\Debug\ServerLearn.exe.config
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\bin\Debug\ServerLearn.exe
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\bin\Debug\ServerLearn.pdb
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\obj\Debug\ServerLearn.csproj.AssemblyReference.cache
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\obj\Debug\ServerLearn.csproj.SuggestedBindingRedirects.cache
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\obj\Debug\ServerLearn.Properties.Resources.resources
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\obj\Debug\ServerLearn.csproj.GenerateResource.cache
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\obj\Debug\ServerLearn.csproj.CoreCompileInputs.cache
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\obj\Debug\ServerLearn.exe
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\obj\Debug\ServerLearn.pdb
+E:\HS\TE-Fantasy\GameLoginServer\ServerLearn\ServerLearn\obj\Debug\ServerLearn.Form1.resources

@@ -1,0 +1,11 @@
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\bin\Debug\ClientTest.exe.config
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\bin\Debug\ClientTest.exe
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\bin\Debug\ClientTest.pdb
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\obj\Debug\ClientTest.csproj.AssemblyReference.cache
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\obj\Debug\ClientTest.csproj.SuggestedBindingRedirects.cache
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\obj\Debug\ClientTest.Properties.Resources.resources
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\obj\Debug\ClientTest.csproj.GenerateResource.cache
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\obj\Debug\ClientTest.csproj.CoreCompileInputs.cache
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\obj\Debug\ClientTest.exe
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\obj\Debug\ClientTest.pdb
+E:\HS\TE-Fantasy\GameLoginServer\ClientTest\ClientTest\obj\Debug\ClientTest.Form1.resources
