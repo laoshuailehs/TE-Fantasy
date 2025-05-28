@@ -1,10 +1,17 @@
 ManifestFileVersion: 0
-CRC: 4189448256
+CRC: 2569197892
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: defaultpackage_assets_assetraw_actor.bundle
-      Dependencies: {}
+      Name: defaultpackage_assets_assetraw_actor_game.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_assets_assetraw_materials.bundle
+        Dependency_1: defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle
+        Dependency_2: defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle
+        Dependency_3: defaultpackage_share_assets_addres_jammo-character_materials.bundle
+        Dependency_4: defaultpackage_share_assets_addres_jammo-character_textures_alternates.bundle
+        Dependency_5: defaultpackage_share_assets_addres_jammo-character_animations.bundle
+        Dependency_6: defaultpackage_share_assets_addres_jammo-character_models.bundle
     Info_1:
       Name: defaultpackage_assets_assetraw_configs.bundle
       Dependencies: {}
@@ -22,18 +29,55 @@ AssetBundleManifest:
     Info_5:
       Name: defaultpackage_assets_assetraw_scenes.bundle
       Dependencies:
-        Dependency_0: defaultpackage_assets_assetraw_actor.bundle
+        Dependency_0: defaultpackage_assets_assetraw_actor_game.bundle
         Dependency_1: defaultpackage_assets_assetraw_materials.bundle
     Info_6:
       Name: defaultpackage_assets_assetraw_ui.bundle
       Dependencies:
         Dependency_0: defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle
+        Dependency_1: defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle
+        Dependency_2: defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle
     Info_7:
       Name: defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle
       Dependencies: {}
     Info_8:
-      Name: defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle
+      Name: defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle
       Dependencies: {}
     Info_9:
+      Name: defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle
+      Dependencies: {}
+    Info_10:
+      Name: defaultpackage_share_assets_addres_jammo-character_prefabs.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_share_assets_addres_jammo-character_materials.bundle
+        Dependency_1: defaultpackage_share_assets_addres_jammo-character_textures_alternates.bundle
+        Dependency_2: defaultpackage_share_assets_addres_jammo-character_animations.bundle
+        Dependency_3: defaultpackage_share_assets_addres_jammo-character_models.bundle
+    Info_11:
+      Name: defaultpackage_share_assets_addres_jammo-character_materials.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_share_assets_addres_jammo-character_textures.bundle
+        Dependency_1: defaultpackage_share_assets_addres_jammo-character_textures_alternates.bundle
+    Info_12:
+      Name: defaultpackage_share_assets_addres_jammo-character_textures.bundle
+      Dependencies: {}
+    Info_13:
+      Name: defaultpackage_share_assets_addres_jammo-character_textures_alternates.bundle
+      Dependencies: {}
+    Info_14:
+      Name: defaultpackage_share_assets_addres_jammo-character_animations.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_share_assets_addres_jammo-character_animations_default.bundle
+    Info_15:
+      Name: defaultpackage_share_assets_addres_jammo-character_animations_default.bundle
+      Dependencies: {}
+    Info_16:
+      Name: defaultpackage_share_assets_addres_jammo-character_models.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_share_assets_addres_jammo-character_materials.bundle
+    Info_17:
+      Name: defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle
+      Dependencies: {}
+    Info_18:
       Name: defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle
       Dependencies: {}

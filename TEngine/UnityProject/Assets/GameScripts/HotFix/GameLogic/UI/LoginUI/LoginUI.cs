@@ -21,16 +21,18 @@ namespace GameLogic
         private InputField _inputPassword;
         private Button _btnLogin;
         private Button _btnRegistration;
+        private Text _textLogin;
         private bool canLogin;
         
-        string serverIp = "127.0.0.1"; // 服务器 IP 地址
-        int port = 8017;             // 服务器监听端口
+        // string serverIp = "127.0.0.1"; // 服务器 IP 地址
+        // int port = 8017;             // 服务器监听端口
         protected override void ScriptGenerator()
         {
             _inputAccount = FindChildComponent<InputField>("m_inputAccount");
             _inputPassword = FindChildComponent<InputField>("m_inputPassword");
             _btnLogin = FindChildComponent<Button>("m_btnLogin");
             _btnRegistration = FindChildComponent<Button>("m_btnRegistration");
+            _textLogin = FindChildComponent<Text>("m_textLogin");
             _btnLogin.onClick.AddListener(OnClickLoginBtn);
             _btnRegistration.onClick.AddListener(OnClickRegistration);
         }
@@ -40,11 +42,11 @@ namespace GameLogic
         {
             base.OnUpdate();
             _hasOverrideUpdate = true;
-            if (canLogin)
+            if (_textLogin.text=="1")
             {
                 // cts?.Cancel();
                 this.Close();
-                GameModule.Scene.LoadScene("hs");
+                GameModule.Scene.LoadScene("Game");
                 GameModule.UI.ShowUIAsync<HsTestUI>();
             }
         }
@@ -57,16 +59,21 @@ namespace GameLogic
         #region 事件
         private void OnClickLoginBtn()
         {
-            //读取luban表数据
-            // foreach (var item in ConfigSystem.Instance.Tables.Tb.DataMap)
-            // {
-            //     if (item.Value.Id.ToString() == _inputAccount.text && item.Value.Name == _inputPassword.text)
-            //     {
-            //         GameModule.Scene.LoadScene("hs");
-            //         GameModule.UI.ShowUIAsync<HsTestUI>();
-            //         this.Close();
-            //     }
-            // }
+            // 读取luban表数据
+             // foreach (var item in ConfigSystem.Instance.Tables.TbInfo.DataMap)
+             // {
+             //     if (item.Value.Username == _inputAccount.text )
+             //     {
+             //         int.TryParse(_inputPassword.text, out int password);
+             //         if (item.Value.Password == password)
+             //         {
+             //             // GameModule.Scene.LoadScene("hs");
+             //             // GameModule.UI.ShowUIAsync<HsTestUI>();
+             //             // this.Close();
+             //             canLogin = true;
+             //         }
+             //     }
+             // }
             
             //读取mysql数据库 未知报错 没解决(可能的解决方法，下载低版本mysql,懒得试了out！) KeyNotFoundException: The given key '29544' was not present in the dictionary.
             
@@ -80,7 +87,7 @@ namespace GameLogic
 
             // MainTest().Forget();
             
-            canLogin = true;
+            // canLogin = true;
 
 
             // GameModule.Scene.LoadScene("Game");
@@ -410,3 +417,4 @@ namespace GameLogic
         public string  Password;
     }
 }
+

@@ -13,21 +13,82 @@ namespace GameConfig
 {
 public partial class Tables
 {
-    public item.TbItem TbItem {get; }
-    public ybtest.Tb Tb {get; }
+    #region The Tables
+
+    private item.TbItem m_TbItem;
+    public item.TbItem TbItem 
+    {
+        get
+        {
+            if (m_TbItem == null)
+            {
+                m_TbItem = new item.TbItem(defaultLoader("item_tbitem"));
+                m_TbItem.ResolveRef(this);
+            }
+            return m_TbItem;
+        }
+        set
+        {
+            m_TbItem = value;
+            m_TbItem.ResolveRef(this);
+        }
+    }
+    private ybtest.Tb m_Tb;
+    public ybtest.Tb Tb 
+    {
+        get
+        {
+            if (m_Tb == null)
+            {
+                m_Tb = new ybtest.Tb(defaultLoader("ybtest_tb"));
+                m_Tb.ResolveRef(this);
+            }
+            return m_Tb;
+        }
+        set
+        {
+            m_Tb = value;
+            m_Tb.ResolveRef(this);
+        }
+    }
+    private loginInfo.TbInfo m_TbInfo;
+    public loginInfo.TbInfo TbInfo 
+    {
+        get
+        {
+            if (m_TbInfo == null)
+            {
+                m_TbInfo = new loginInfo.TbInfo(defaultLoader("logininfo_tbinfo"));
+                m_TbInfo.ResolveRef(this);
+            }
+            return m_TbInfo;
+        }
+        set
+        {
+            m_TbInfo = value;
+            m_TbInfo.ResolveRef(this);
+        }
+    }
+
+    #endregion
+
+    System.Func<string, ByteBuf> defaultLoader;
 
     public Tables(System.Func<string, ByteBuf> loader)
     {
-        TbItem = new item.TbItem(loader("item_tbitem"));
-        Tb = new ybtest.Tb(loader("ybtest_tb"));
-        ResolveRef();
+        SetDefaultLoader(loader);
+        Init();
     }
     
-    private void ResolveRef()
+    public void SetDefaultLoader(System.Func<string, ByteBuf> loader)
     {
-        TbItem.ResolveRef(this);
-        Tb.ResolveRef(this);
+        defaultLoader = null;
+        defaultLoader = loader;
     }
+
+    //public partial void Init();
+
+    public void Init(){}
 }
 
 }
