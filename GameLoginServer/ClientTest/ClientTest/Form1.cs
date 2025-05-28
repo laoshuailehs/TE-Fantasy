@@ -99,7 +99,7 @@ namespace ClientTest
                     if (ex.InnerException is SocketException se && 
                         se.ErrorCode == 10004) // WSAEINTR 错误码: 被中断的系统调用
                     {
-                        AddText("检测到连接中断（WSACancelBlockingCall）");
+                        AddText("检测到连接中断");
                     }
                     else
                     {
