@@ -7,8 +7,8 @@
     "BuildBundleType": 2,
     "BuildPipeline": "BuiltinBuildPipeline",
     "PackageName": "DefaultPackage",
-    "PackageVersion": "2025-05-28-1068",
-    "PackageNote": "2025/5/28 17:48:59",
+    "PackageVersion": "2025-05-29-954",
+    "PackageNote": "2025/5/29 15:54:28",
     "AssetList": [
         {
             "Address": "Cube",
@@ -17,9 +17,9 @@
             "AssetTags": [],
             "BundleID": 0,
             "DependBundleIDs": [
-                4,
-                17,
-                18
+                6,
+                16,
+                17
             ]
         },
         {
@@ -29,13 +29,13 @@
             "AssetTags": [],
             "BundleID": 0,
             "DependBundleIDs": [
-                10,
-                11,
-                12,
+                1,
+                2,
+                6,
+                9,
                 13,
                 14,
-                15,
-                16
+                15
             ]
         },
         {
@@ -45,16 +45,132 @@
             "AssetTags": [],
             "BundleID": 0,
             "DependBundleIDs": [
-                17,
-                18
+                16,
+                17
             ]
+        },
+        {
+            "Address": "AnimatorController_Jamo",
+            "AssetPath": "Assets/AssetRaw/Animations/AnimatorController_Jamo.controller",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": [
+                2
+            ]
+        },
+        {
+            "Address": "a_Idle",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Idle_Battle",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Battle.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Idle_Happy",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Happy.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Idle_Relaxed",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Relaxed.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Idle_Scared",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Scared.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Running",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Walking",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Falling To Landing",
+            "AssetPath": "Assets/AssetRaw/Animations/Falling To Landing.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Fist Pump",
+            "AssetPath": "Assets/AssetRaw/Animations/Fist Pump.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Jump",
+            "AssetPath": "Assets/AssetRaw/Animations/Jump.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "PlayerAnimator",
+            "AssetPath": "Assets/AssetRaw/Animations/PlayerAnimator.controller",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": [
+                2
+            ]
+        },
+        {
+            "Address": "Standing",
+            "AssetPath": "Assets/AssetRaw/Animations/Standing.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Victory Idle",
+            "AssetPath": "Assets/AssetRaw/Animations/Victory Idle.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
         },
         {
             "Address": "about",
             "AssetPath": "Assets/AssetRaw/Configs/about.txt",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 1,
+            "BundleID": 3,
             "DependBundleIDs": []
         },
         {
@@ -62,7 +178,7 @@
             "AssetPath": "Assets/AssetRaw/Configs/bytes/item_tbitem.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 2,
+            "BundleID": 4,
             "DependBundleIDs": []
         },
         {
@@ -70,7 +186,7 @@
             "AssetPath": "Assets/AssetRaw/Configs/bytes/logininfo_tbinfo.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 2,
+            "BundleID": 4,
             "DependBundleIDs": []
         },
         {
@@ -78,7 +194,7 @@
             "AssetPath": "Assets/AssetRaw/Configs/bytes/ybtest_tb.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 2,
+            "BundleID": 4,
             "DependBundleIDs": []
         },
         {
@@ -86,7 +202,7 @@
             "AssetPath": "Assets/AssetRaw/DLL/GameLogic.dll.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 3,
+            "BundleID": 5,
             "DependBundleIDs": []
         },
         {
@@ -94,7 +210,7 @@
             "AssetPath": "Assets/AssetRaw/DLL/GameProto.dll.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 3,
+            "BundleID": 5,
             "DependBundleIDs": []
         },
         {
@@ -102,7 +218,7 @@
             "AssetPath": "Assets/AssetRaw/DLL/mscorlib.dll.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 3,
+            "BundleID": 5,
             "DependBundleIDs": []
         },
         {
@@ -110,7 +226,7 @@
             "AssetPath": "Assets/AssetRaw/DLL/System.Core.dll.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 3,
+            "BundleID": 5,
             "DependBundleIDs": []
         },
         {
@@ -118,7 +234,7 @@
             "AssetPath": "Assets/AssetRaw/DLL/System.dll.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 3,
+            "BundleID": 5,
             "DependBundleIDs": []
         },
         {
@@ -126,7 +242,7 @@
             "AssetPath": "Assets/AssetRaw/DLL/TEngine.Runtime.dll.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 3,
+            "BundleID": 5,
             "DependBundleIDs": []
         },
         {
@@ -134,7 +250,7 @@
             "AssetPath": "Assets/AssetRaw/DLL/UniTask.dll.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 3,
+            "BundleID": 5,
             "DependBundleIDs": []
         },
         {
@@ -142,7 +258,7 @@
             "AssetPath": "Assets/AssetRaw/DLL/YooAsset.dll.bytes",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 3,
+            "BundleID": 5,
             "DependBundleIDs": []
         },
         {
@@ -150,7 +266,7 @@
             "AssetPath": "Assets/AssetRaw/Materials/cube.mat",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 4,
+            "BundleID": 6,
             "DependBundleIDs": []
         },
         {
@@ -158,9 +274,9 @@
             "AssetPath": "Assets/AssetRaw/Materials/FS000_Night_02.mat",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 4,
+            "BundleID": 6,
             "DependBundleIDs": [
-                8
+                11
             ]
         },
         {
@@ -168,28 +284,64 @@
             "AssetPath": "Assets/AssetRaw/Materials/FS002_Day.mat",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 4,
+            "BundleID": 6,
             "DependBundleIDs": [
-                9
+                12
             ]
+        },
+        {
+            "Address": "m_ground",
+            "AssetPath": "Assets/AssetRaw/Materials/m_ground.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "m_jammo_eyes",
+            "AssetPath": "Assets/AssetRaw/Materials/m_jammo_eyes.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": [
+                15
+            ]
+        },
+        {
+            "Address": "m_jammo_metal",
+            "AssetPath": "Assets/AssetRaw/Materials/m_jammo_metal.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": [
+                9,
+                15
+            ]
+        },
+        {
+            "Address": "Skybox",
+            "AssetPath": "Assets/AssetRaw/Materials/Skybox.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
         },
         {
             "Address": "Game",
             "AssetPath": "Assets/AssetRaw/Scenes/Game.unity",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 5,
+            "BundleID": 7,
             "DependBundleIDs": [
                 0,
-                4,
-                8,
-                10,
+                1,
+                2,
+                6,
+                9,
                 11,
-                12,
                 13,
                 14,
-                15,
-                16
+                15
             ]
         },
         {
@@ -197,10 +349,10 @@
             "AssetPath": "Assets/AssetRaw/Scenes/hs.unity",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 5,
+            "BundleID": 7,
             "DependBundleIDs": [
-                4,
-                9
+                6,
+                12
             ]
         },
         {
@@ -208,9 +360,9 @@
             "AssetPath": "Assets/AssetRaw/UI/BattleMainUI.prefab",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 6,
+            "BundleID": 8,
             "DependBundleIDs": [
-                7
+                10
             ]
         },
         {
@@ -218,12 +370,12 @@
             "AssetPath": "Assets/AssetRaw/UI/HsTestUI.prefab",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 6,
+            "BundleID": 8,
             "DependBundleIDs": [
                 0,
-                7,
-                17,
-                18
+                10,
+                16,
+                17
             ]
         },
         {
@@ -231,7 +383,7 @@
             "AssetPath": "Assets/AssetRaw/UI/LoginUI.prefab",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 6,
+            "BundleID": 8,
             "DependBundleIDs": []
         },
         {
@@ -239,7 +391,39 @@
             "AssetPath": "Assets/AssetRaw/UI/TestUI.prefab",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 6,
+            "BundleID": 8,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "mixbot_low_mixamo_edit1_AlbedoTransparency",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/mixbot_low_mixamo_edit1_AlbedoTransparency.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "t_jammo_black",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_black.psd",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "t_jammo_blue",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_blue.psd",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "t_jammo_yellow",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_yellow.psd",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
             "DependBundleIDs": []
         },
         {
@@ -247,7 +431,7 @@
             "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_bg.png",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 7,
+            "BundleID": 10,
             "DependBundleIDs": []
         },
         {
@@ -255,7 +439,7 @@
             "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_handle.png",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 7,
+            "BundleID": 10,
             "DependBundleIDs": []
         },
         {
@@ -263,7 +447,7 @@
             "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Blue.png",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 7,
+            "BundleID": 10,
             "DependBundleIDs": []
         },
         {
@@ -271,7 +455,7 @@
             "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Red.png",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 7,
+            "BundleID": 10,
             "DependBundleIDs": []
         },
         {
@@ -279,7 +463,7 @@
             "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Yellow.png",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 7,
+            "BundleID": 10,
             "DependBundleIDs": []
         },
         {
@@ -287,7 +471,7 @@
             "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Frame.png",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 7,
+            "BundleID": 10,
             "DependBundleIDs": []
         },
         {
@@ -295,32 +479,53 @@
             "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/zd_img_light.png",
             "AssetGUID": "",
             "AssetTags": [],
-            "BundleID": 7,
+            "BundleID": 10,
             "DependBundleIDs": []
         }
     ],
     "BundleList": [
         {
             "BundleName": "defaultpackage_assets_assetraw_actor_game.bundle",
-            "UnityCRC": 2031253072,
-            "FileHash": "24c9f624be6d2f146d7b21825015d1f1",
-            "FileCRC": "6216e740",
-            "FileSize": 2730342,
+            "UnityCRC": 4050255540,
+            "FileHash": "e24cc2c80545702e6899dbb13bbc8508",
+            "FileCRC": "551e8be9",
+            "FileSize": 2730595,
             "Encrypted": false,
             "Tags": [],
             "DependBundleIDs": [
-                4,
-                8,
+                1,
+                2,
+                6,
                 9,
-                10,
                 11,
                 12,
                 13,
                 15,
                 16,
-                17,
-                18
+                17
             ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_animations.bundle",
+            "UnityCRC": 1908906399,
+            "FileHash": "1cf76eb13b0839536ea318b9b7e3b076",
+            "FileCRC": "018059a5",
+            "FileSize": 292862,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                2
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_animations_default.bundle",
+            "UnityCRC": 1647513372,
+            "FileHash": "ee37bbad252ae4ed08aac31f41cd7da3",
+            "FileCRC": "4da84626",
+            "FileSize": 240821,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_configs.bundle",
@@ -344,63 +549,74 @@
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "UnityCRC": 1022555789,
-            "FileHash": "30b39949623ecfee38962f36c349e5da",
-            "FileCRC": "47e43226",
-            "FileSize": 2275906,
+            "UnityCRC": 2972082782,
+            "FileHash": "8885b0c873c518d163101bdb5936d9da",
+            "FileCRC": "dd3ece4e",
+            "FileSize": 2275914,
             "Encrypted": false,
             "Tags": [],
             "DependBundleIDs": []
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_materials.bundle",
-            "UnityCRC": 970341927,
-            "FileHash": "f749233ec8f4cee300a5ef8e53e14baf",
-            "FileCRC": "6112617e",
-            "FileSize": 46450,
+            "UnityCRC": 2130277360,
+            "FileHash": "abc688681e4c8c690c54f265ae472c47",
+            "FileCRC": "98432850",
+            "FileSize": 748705,
             "Encrypted": false,
             "Tags": [],
             "DependBundleIDs": [
-                8,
-                9
+                9,
+                11,
+                12,
+                15
             ]
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_scenes.bundle",
-            "UnityCRC": 194854538,
-            "FileHash": "9bccdc22bc60ba3a25a2052b51126462",
-            "FileCRC": "6dd2754d",
-            "FileSize": 278840,
+            "UnityCRC": 285440097,
+            "FileHash": "282fbcffbdb4cf731822cbef64c0e570",
+            "FileCRC": "18dcaa8a",
+            "FileSize": 278772,
             "Encrypted": false,
             "Tags": [],
             "DependBundleIDs": [
                 0,
-                4,
-                8,
+                1,
+                2,
+                6,
                 9,
-                10,
                 11,
                 12,
                 13,
                 15,
                 16,
-                17,
-                18
+                17
             ]
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_ui.bundle",
-            "UnityCRC": 1362341997,
-            "FileHash": "e43c3be77abc8bfa7836553292210197",
-            "FileCRC": "63e481b3",
-            "FileSize": 21683,
+            "UnityCRC": 1359476264,
+            "FileHash": "9c9bf576cab7258d5a875752d6555014",
+            "FileCRC": "594b3bc3",
+            "FileSize": 21983,
             "Encrypted": false,
             "Tags": [],
             "DependBundleIDs": [
-                7,
-                17,
-                18
+                10,
+                16,
+                17
             ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+            "UnityCRC": 1803197765,
+            "FileHash": "66287956123b684155e440461c7042d8",
+            "FileCRC": "74c6f10e",
+            "FileSize": 2691610,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
@@ -433,69 +649,38 @@
             "DependBundleIDs": []
         },
         {
-            "BundleName": "defaultpackage_share_assets_addres_jammo-character_animations.bundle",
-            "UnityCRC": 2159348380,
-            "FileHash": "87cf5dd225af57b9caee1886b12d804f",
-            "FileCRC": "4117d676",
-            "FileSize": 5389,
-            "Encrypted": false,
-            "Tags": [],
-            "DependBundleIDs": [
-                11
-            ]
-        },
-        {
-            "BundleName": "defaultpackage_share_assets_addres_jammo-character_animations_default.bundle",
-            "UnityCRC": 3521037513,
-            "FileHash": "9912b4d7452b8ab8acc9b0e6443c3a7f",
-            "FileCRC": "f7103e3e",
-            "FileSize": 225300,
-            "Encrypted": false,
-            "Tags": [],
-            "DependBundleIDs": []
-        },
-        {
-            "BundleName": "defaultpackage_share_assets_addres_jammo-character_materials.bundle",
-            "UnityCRC": 1187184881,
-            "FileHash": "baffc481059b149a27a3b957c9b6cf4c",
-            "FileCRC": "1716bd32",
-            "FileSize": 742962,
-            "Encrypted": false,
-            "Tags": [],
-            "DependBundleIDs": [
-                15,
-                16
-            ]
-        },
-        {
             "BundleName": "defaultpackage_share_assets_addres_jammo-character_models.bundle",
-            "UnityCRC": 3147818466,
-            "FileHash": "7cacb952a798415465e5c940b841a899",
-            "FileCRC": "bd5288b9",
-            "FileSize": 498298,
+            "UnityCRC": 2082959325,
+            "FileHash": "a44021e5f97a3cd887114133d54c3050",
+            "FileCRC": "315c1a6b",
+            "FileSize": 498313,
             "Encrypted": false,
             "Tags": [],
             "DependBundleIDs": [
+                6,
+                9,
+                11,
                 12,
-                15,
-                16
+                15
             ]
         },
         {
             "BundleName": "defaultpackage_share_assets_addres_jammo-character_prefabs.bundle",
-            "UnityCRC": 2390569561,
-            "FileHash": "ee92f6f1c51fcd4213789464b6c0a792",
-            "FileCRC": "cdf51fc8",
-            "FileSize": 2727137,
+            "UnityCRC": 841110312,
+            "FileHash": "2849478c83a79a3aa9aec08c6bc32ec6",
+            "FileCRC": "5dc57a81",
+            "FileSize": 2727081,
             "Encrypted": false,
             "Tags": [],
             "DependBundleIDs": [
-                10,
+                1,
+                2,
+                6,
+                9,
                 11,
                 12,
                 13,
-                15,
-                16
+                15
             ]
         },
         {
@@ -504,16 +689,6 @@
             "FileHash": "95220db18189efb8c6919572508bbd4d",
             "FileCRC": "c340de22",
             "FileSize": 6371505,
-            "Encrypted": false,
-            "Tags": [],
-            "DependBundleIDs": []
-        },
-        {
-            "BundleName": "defaultpackage_share_assets_addres_jammo-character_textures_alternates.bundle",
-            "UnityCRC": 2348764055,
-            "FileHash": "917e97d55960c47e0e7ee2219cf28c15",
-            "FileCRC": "447f4efa",
-            "FileSize": 2713903,
             "Encrypted": false,
             "Tags": [],
             "DependBundleIDs": []

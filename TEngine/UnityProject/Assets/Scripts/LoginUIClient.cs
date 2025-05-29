@@ -23,6 +23,8 @@ public class LoginUIClient : MonoBehaviour
     [SerializeField]
     private Button _btnRegistration;
     [SerializeField]
+    private Button _btnUpdate;
+    [SerializeField]
     private Text _textLogin;
     private bool canLogin;
     string serverIp = "127.0.0.1"; // 服务器 IP 地址
@@ -36,14 +38,42 @@ public class LoginUIClient : MonoBehaviour
     {
         _btnLogin.onClick.AddListener(OnClickLoginBtn);
         _btnRegistration.onClick.AddListener(OnClickRegistration);
+        _btnUpdate.onClick.AddListener(OnClickUpdateBtn);
     }
 
     private void OnClickRegistration()
     {
-        
+        ConnectServer();
+        SendRegistrationMessage();
+    }
+    
+    private void OnClickLoginBtn()
+    {
+
+        ConnectServer();
+        SendLoginMessage();
     }
 
-    private void OnClickLoginBtn()
+    private void OnClickUpdateBtn()
+    {
+        ConnectServer();
+        SendUpdateMessage();
+    }
+
+    void Update()
+    {
+        if (canLogin)
+        {
+            // cts?.Cancel();
+            // this.Close();
+            // CloseClient();
+            // GameModule.Scene.LoadScene("Game");
+            // GameModule.UI.ShowUIAsync<HsTestUI>();
+            // SceneManager.LoadScene("Game");
+        }
+    }
+
+    private void ConnectServer()
     {
         try
         {
@@ -65,25 +95,9 @@ public class LoginUIClient : MonoBehaviour
         {
             Log.Info(e);
         }
-
-        SendLoginMessage();
     }
-
-
-    void Update()
-    {
-        if (canLogin)
-        {
-            // cts?.Cancel();
-            // this.Close();
-            // CloseClient();
-            // GameModule.Scene.LoadScene("Game");
-            // GameModule.UI.ShowUIAsync<HsTestUI>();
-            // SceneManager.LoadScene("Game");
-        }
-    }
-
-    async void SendLoginMessage()
+    
+    private void SendLoginMessage()
     {
         if (_client != null && _client.Connected)
         {
@@ -92,6 +106,62 @@ public class LoginUIClient : MonoBehaviour
             LoginInfo loginInfo = new LoginInfo
             {
                 PackId = 1,
+                UserName = _inputAccount.text,
+                Password = _inputPassword.text
+            };
+            
+            string message = JsonConvert.SerializeObject(loginInfo); // 获取用户输入的消息
+            
+            byte[] data = Encoding.UTF8.GetBytes(message); // 将字符串转换为字节数组
+
+            stream.Write(data, 0, data.Length); // 发送数据到服务器
+
+            Log.Info("消息已发送！");
+                
+        }
+        else
+        {
+            Log.Info("当前未连接到服务器！");
+        }
+    }
+    
+    private void SendRegistrationMessage()
+    {
+        if (_client != null && _client.Connected)
+        {
+            NetworkStream stream = _client.GetStream();
+            
+            LoginInfo loginInfo = new LoginInfo
+            {
+                PackId = 2,
+                UserName = _inputAccount.text,
+                Password = _inputPassword.text
+            };
+            
+            string message = JsonConvert.SerializeObject(loginInfo); // 获取用户输入的消息
+            
+            byte[] data = Encoding.UTF8.GetBytes(message); // 将字符串转换为字节数组
+
+            stream.Write(data, 0, data.Length); // 发送数据到服务器
+
+            Log.Info("消息已发送！");
+                
+        }
+        else
+        {
+            Log.Info("当前未连接到服务器！");
+        }
+    }
+    
+    private void SendUpdateMessage()
+    {
+        if (_client != null && _client.Connected)
+        {
+            NetworkStream stream = _client.GetStream();
+            
+            LoginInfo loginInfo = new LoginInfo
+            {
+                PackId = 3,
                 UserName = _inputAccount.text,
                 Password = _inputPassword.text
             };
@@ -122,7 +192,7 @@ public class LoginUIClient : MonoBehaviour
             {
                 if (_stream.DataAvailable)
                 {
-                    bytesRead = _stream.Read(buffer, 0, buffer.Length);
+                    bytesRead = await _stream.ReadAsync(buffer, 0, buffer.Length, token);
 
                     if (bytesRead == 0)
                     {
@@ -132,17 +202,7 @@ public class LoginUIClient : MonoBehaviour
 
                     string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                     Log.Info("收到消息：" + message);
-
-                    if (message.Equals("1"))
-                    {
-                        // canLogin = true;
-                        _textLogin.text = "1";
-                        Log.Info("登入成功！");
-                    }
-                    else
-                    {
-                        Log.Info("账号或密码错误,登录失败");
-                    }
+                    ProcessingRes(message);
                 }
                 else
                 {
@@ -175,6 +235,61 @@ public class LoginUIClient : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 处理服务器返回的消息
+    /// </summary>
+    /// <param name="message"></param>
+    private void ProcessingRes(string message)
+    {
+        try
+        {
+            Response response = JsonConvert.DeserializeObject<Response>(message);
+            switch (response.PackId)
+            {
+                case 1:
+                {
+                    if (response.Result == 1)
+                    {
+                        _textLogin.gameObject.SetActive(true);
+                        Log.Info("登入成功！");
+                    }
+                    else
+                    {
+                        Log.Info($"{response.Description},登录失败");
+                    }
+                }break;
+                case 2:
+                {
+                    if (response.Result == 1)
+                    {
+                        Log.Info("注册成功！");
+                    }
+                    else
+                    {
+                        Log.Info($"{response.Description},注册失败");
+                    }
+                }break;
+                case 3:
+                {
+                    if (response.Result == 1)
+                    {
+                        Log.Info("更新成功！");
+                    }
+                    else
+                    {
+                        Log.Info($"{response.Description},更新失败");
+                    }
+                }break;
+            }
+                        
+        }
+        catch (Exception e)
+        {
+            Log.Info(message);
+        }
+    }
+    
+    
     private void OnDisable()
     {
         CloseClient().Forget();
@@ -203,6 +318,15 @@ public class LoginUIClient : MonoBehaviour
     public class LoginInfo
     {
         public int PackId;
+        public string  UserName;
+        public string  Password;
+    }
+    
+    public class Response
+    {
+        public int PackId;
+        public int  Result;
+        public string Description;
         public string  UserName;
         public string  Password;
     }

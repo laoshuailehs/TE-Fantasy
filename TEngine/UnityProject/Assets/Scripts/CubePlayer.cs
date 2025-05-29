@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TEngine;
 using UnityEngine;
 
 namespace GameLogicHs
@@ -10,7 +11,6 @@ namespace GameLogicHs
         public float speed;
         public VariableJoystick variableJoystick;
         public Rigidbody rb;
-        
         private void Start()
         {
             variableJoystick = GameObject.FindObjectOfType<VariableJoystick>();
@@ -21,7 +21,7 @@ namespace GameLogicHs
             Move();
         }
 
-        public void Move()
+        private void Move()
         {
             if (variableJoystick == null)
             {
@@ -29,13 +29,21 @@ namespace GameLogicHs
                 return;
             }
             Vector3 direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
-
             // 设置物体朝向与移动方向一致
             if (direction != Vector3.zero)
             {
+                rb.velocity = direction.normalized * speed;
                 transform.rotation = Quaternion.LookRotation(direction);
             }
-            rb.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
+            else
+            {
+                rb.velocity  = Vector3.zero;
+            }
+
+            // rb.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.Acceleration);
+            
         }
+        
+       
     }
 }

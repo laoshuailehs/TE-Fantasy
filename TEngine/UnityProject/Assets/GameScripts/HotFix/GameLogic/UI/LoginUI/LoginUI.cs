@@ -42,11 +42,11 @@ namespace GameLogic
         {
             base.OnUpdate();
             _hasOverrideUpdate = true;
-            if (_textLogin.text=="1")
+            if (_textLogin.gameObject.activeSelf)
             {
                 // cts?.Cancel();
                 this.Close();
-                GameModule.Scene.LoadScene("Game");
+                GameModule.Scene.LoadSceneAsync("Game");
                 GameModule.UI.ShowUIAsync<HsTestUI>();
             }
         }

@@ -14,18 +14,17 @@ namespace ServerLearn
         public Form1()
         {
             InitializeComponent();
-            MongoClient mongoclient = new MongoClient("mongodb://localhost:27017");
-            _mongoDatabase = mongoclient.GetDatabase("hsgamedb");
-            _loginCollection = _mongoDatabase.GetCollection<BsonDocument>("gameLogin");
         }
 
         private Socket  serverSocket;
         private IMongoDatabase _mongoDatabase;
         private IMongoCollection<BsonDocument> _loginCollection;
         byte[] bytes = new byte[1024];
+        bool  isMongoConnected = false;
         private void StartServer_Click(object sender, EventArgs e)
         {
             StartServerInfo();
+            ConnectMongo();
         }
 
         private void StopServer_Click(object sender, EventArgs e)
@@ -38,6 +37,24 @@ namespace ServerLearn
             AddText("服务器已关闭");
         }
 
+        private void ConnectMongo()
+        {
+            try
+            {
+                MongoClient mongoclient = new MongoClient(mongodb.Text);
+                _mongoDatabase = mongoclient.GetDatabase(Database.Text);
+                _loginCollection = _mongoDatabase.GetCollection<BsonDocument>(Collection.Text);
+                var count = _loginCollection.CountDocuments(new BsonDocument());
+                isMongoConnected = true;
+            }
+            catch (Exception e)
+            {
+                AddText("MongoDB 连接失败");
+                isMongoConnected = false;
+            }
+            
+        }
+        
         private void StartServerInfo()
         {
             serverSocket= new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -89,9 +106,17 @@ namespace ServerLearn
                 if (bytesRead > 0)
                 {
                     string data = Encoding.UTF8.GetString(bytes, 0, bytesRead);
-                    AddText($"收到消息：{data}");
-
-                    byte[] responseBytes = Encoding.UTF8.GetBytes(ResponseData(data));
+                    AddText($"{isMongoConnected} 收到消息：{data}");
+                    //  处理数据发送响应
+                    byte[] responseBytes = new byte[bytesRead];
+                    if (!isMongoConnected)
+                    {
+                        responseBytes = Encoding.UTF8.GetBytes("MongoDB 连接失败");
+                    }
+                    else
+                    {
+                        responseBytes = Encoding.UTF8.GetBytes(ResponseData(data));
+                    }
                     clientSocket.BeginSend(responseBytes, 0, responseBytes.Length, SocketFlags.None, SendCallback, clientSocket);
 
                     // 继续监听下一次接收
@@ -142,20 +167,65 @@ namespace ServerLearn
             }
             else if (loginInfo.PackId == 2)
             {
-                Register(loginInfo);
-                return "0";
+                return Register(loginInfo);
             }
+            else if (loginInfo.PackId == 3)
+            {
+                return UpdateUser(loginInfo);
+            }   
             else
             {
                 AddText("未知请求");
                 return "0"; // 未知请求
             }
-            return "0";
+            // return "0";
         }
 
-        private void Register(LoginInfo loginInfo)
+        private string Register(LoginInfo loginInfo)
         {
-            
+            try
+            {
+                // 查询用户
+                var filter = Builders<BsonDocument>.Filter.Eq("username", loginInfo.UserName);
+                var result = _loginCollection.Find(filter).ToList();
+        
+                // 如果查询结果为空，表示用户不存在
+                if (result.Count > 0)
+                {
+                    AddText($"用户已存在");
+                    Response response = new Response()
+                    {
+                        PackId = loginInfo.PackId,
+                        Result = 0,
+                        Description = "用户已存在",
+                        UserName = loginInfo.UserName,
+                        Password = loginInfo.Password
+                    };
+                    return JsonConvert.SerializeObject(response);  // 用户已存在
+                }
+                
+                var document = new BsonDocument()
+                {
+                    { "username", loginInfo.UserName },
+                    { "password", loginInfo.Password }
+                };
+                _loginCollection.InsertOne(document);
+                AddText("注册成功");
+                Response response1 = new Response()
+                {
+                    PackId = loginInfo.PackId,
+                    Result = 1,
+                    Description = "注册成功",
+                    UserName = loginInfo.UserName,
+                    Password = loginInfo.Password
+                };
+                return JsonConvert.SerializeObject(response1);  // 用户已存在
+            }
+            catch (Exception e)
+            {
+                AddText(e.Message);
+                return "0";
+            }
         }
 
         private string LoginCheck(LoginInfo loginInfo)
@@ -168,7 +238,15 @@ namespace ServerLearn
             if (result.Count == 0)
             {
                 AddText($"用户不存在");
-                return "0"; // 用户不存在
+                Response response = new Response()
+                {
+                    PackId = loginInfo.PackId,
+                    Result = 0,
+                    Description = "用户不存在",
+                    UserName = loginInfo.UserName,
+                    Password = loginInfo.Password
+                };
+                return JsonConvert.SerializeObject(response); // 用户不存在
             }
         
             foreach (var document in result)
@@ -180,14 +258,82 @@ namespace ServerLearn
             if (result[0]["password"].ToString() == loginInfo.Password)
             {
                 AddText($"登录成功");
-                return "1"; // 登录成功
+                Response response = new Response()
+                {
+                    PackId = loginInfo.PackId,
+                    Result = 1,
+                    Description = "登录成功",
+                    UserName = loginInfo.UserName,
+                    Password = loginInfo.Password
+                };
+                return JsonConvert.SerializeObject(response); // 登录成功
             }
             else
             {
                 AddText($"密码错误");
-                return "0"; // 密码错误
+                Response response = new Response()
+                {
+                    PackId = loginInfo.PackId,
+                    Result = 0,
+                    Description = "密码错误",
+                    UserName = loginInfo.UserName,
+                    Password = loginInfo.Password
+                };
+                return JsonConvert.SerializeObject(response); // 密码错误
             }
         }
+        
+        private string UpdateUser(LoginInfo loginInfo)
+        {
+            try
+            {
+                // 构造查询条件：根据用户名查找用户
+                var filter = Builders<BsonDocument>.Filter.Eq("username", loginInfo.UserName);
+
+                // 构造更新内容：更新密码字段
+                var update = Builders<BsonDocument>.Update.Set("password", loginInfo.Password);
+
+                // 执行更新操作
+                var result = _loginCollection.UpdateOne(filter, update);
+
+                if (result.ModifiedCount > 0)
+                {
+                    AddText($"用户 {loginInfo.UserName} 更新成功");
+                    return JsonConvert.SerializeObject(new Response
+                    {
+                        PackId = loginInfo.PackId,
+                        Result = 1,
+                        Description = "更新成功",
+                        Password = loginInfo.Password,
+                        UserName = loginInfo.UserName
+                    });
+                }
+                else
+                {
+                    AddText($"用户 {loginInfo.UserName} 不存在或未修改");
+                    return JsonConvert.SerializeObject(new Response
+                    {
+                        PackId = loginInfo.PackId,
+                        Result = 0,
+                        Description = "用户不存在",
+                        Password = loginInfo.Password,
+                        UserName = loginInfo.UserName
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                AddText($"更新失败: {ex.Message}");
+                return JsonConvert.SerializeObject(new Response
+                {
+                    PackId = loginInfo.PackId,
+                    Result = 0,
+                    Description = "更新失败",
+                    UserName = loginInfo.UserName
+                });
+            }
+        }
+
         
         private void AddText(string text)
         {
@@ -201,5 +347,7 @@ namespace ServerLearn
                 richTextBox1.ScrollToCaret(); // 这里必须也在 UI 线程执行
             }
         }
+
+        
     }
 }

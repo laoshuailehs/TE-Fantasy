@@ -20,14 +20,16 @@ namespace GameLogicHs
         }
 
         
-        void Update()
+        void FixedUpdate()
         {
-            if (player.speed > allowPlayerRotation) {
-                anim.SetFloat ("Blend", player.speed, StartAnimTime, Time.deltaTime);
-                player.Move();
-            } else if (player.speed < allowPlayerRotation) {
-                anim.SetFloat ("Blend", player.speed, StopAnimTime, Time.deltaTime);
-            }
+            anim.SetFloat ("walking", Mathf.Abs(player.rb.velocity.x));
+            // if (player.speed > allowPlayerRotation) {
+            //     anim.SetFloat ("Blend", player.speed, StartAnimTime, Time.deltaTime);
+            //     player.Move();
+            // } else if (player.speed < allowPlayerRotation) {
+            //     anim.SetFloat ("Blend", player.speed, StopAnimTime, Time.deltaTime);
+            // }
+            
         }
     }
 }
