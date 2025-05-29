@@ -27,8 +27,8 @@ public class LoginUIClient : MonoBehaviour
     [SerializeField]
     private Text _textLogin;
     private bool canLogin;
-    string serverIp = "127.0.0.1"; // 服务器 IP 地址
-    int port = 8017;             // 服务器监听端口
+    public string serverIp = "192.168.0.127"; // 服务器 IP 地址
+    public int port = 8017;             // 服务器监听端口
     private TcpClient _client = null;
     private NetworkStream _stream = null;
     bool isConnected = false;
