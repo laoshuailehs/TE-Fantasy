@@ -22,7 +22,7 @@ namespace GameLogicHs
         
         void FixedUpdate()
         {
-            anim.SetFloat ("walking", Mathf.Abs(player.rb.velocity.x));
+            anim.SetFloat ("walking", Mathf.Abs(player.rb.velocity.z));
             // if (player.speed > allowPlayerRotation) {
             //     anim.SetFloat ("Blend", player.speed, StartAnimTime, Time.deltaTime);
             //     player.Move();

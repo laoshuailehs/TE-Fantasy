@@ -2,14 +2,14 @@
     "Summary": {
         "YooVersion": "2.3.8",
         "UnityVersion": "2021.3.28f1",
-        "BuildDate": "2025/5/29 17:36:20",
+        "BuildDate": "2025/6/3 17:28:49",
         "BuildSeconds": 11,
         "BuildTarget": 19,
         "BuildPipeline": "BuiltinBuildPipeline",
         "BuildBundleType": 2,
         "BuildPackageName": "DefaultPackage",
-        "BuildPackageVersion": "2025-05-29-1056",
-        "BuildPackageNote": "2025/5/29 17:36:08",
+        "BuildPackageVersion": "2025-06-03-1048",
+        "BuildPackageNote": "2025/6/3 17:28:36",
         "UniqueBundleName": true,
         "EnableAddressable": true,
         "LocationToLower": false,
@@ -30,10 +30,10 @@
         "CacheServerPort": 0,
         "BuiltinShadersBundleName": "",
         "MonoScriptsBundleName": "",
-        "AssetFileTotalCount": 63,
-        "MainAssetTotalCount": 54,
-        "AllBundleTotalCount": 17,
-        "AllBundleTotalSize": 17543547,
+        "AssetFileTotalCount": 66,
+        "MainAssetTotalCount": 56,
+        "AllBundleTotalCount": 18,
+        "AllBundleTotalSize": 19223312,
         "EncryptedBundleTotalCount": 0,
         "EncryptedBundleTotalSize": 0
     },
@@ -265,7 +265,7 @@
             "AssetGUID": "535d24752e3d6444da644e79e90ec2ca",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
-            "MainBundleSize": 292862,
+            "MainBundleSize": 292868,
             "DependAssets": [
                 {
                     "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
@@ -372,7 +372,7 @@
             "AssetGUID": "aa2bb98b035ff55448dc2b05f2e04251",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
-            "MainBundleSize": 292862,
+            "MainBundleSize": 292868,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -382,7 +382,7 @@
             "AssetGUID": "9320442ecbaf905429dac366ee003323",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
-            "MainBundleSize": 292862,
+            "MainBundleSize": 292868,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -392,7 +392,7 @@
             "AssetGUID": "e7fa3aa78b48c584fbee583a7c532655",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
-            "MainBundleSize": 292862,
+            "MainBundleSize": 292868,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -402,7 +402,7 @@
             "AssetGUID": "8b86b0a80d723d8429e8da554af3f4d7",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
-            "MainBundleSize": 292862,
+            "MainBundleSize": 292868,
             "DependAssets": [
                 {
                     "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
@@ -431,7 +431,7 @@
             "AssetGUID": "d85664db4b473f64fb198bcc5a3c7099",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
-            "MainBundleSize": 292862,
+            "MainBundleSize": 292868,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -441,7 +441,7 @@
             "AssetGUID": "13a6028bbfeabbe4a91cb3339acabfa4",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
-            "MainBundleSize": 292862,
+            "MainBundleSize": 292868,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -491,7 +491,7 @@
             "AssetGUID": "7fb892396cfde944e85057744fcb4296",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 2240538,
+            "MainBundleSize": 2275897,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -501,7 +501,7 @@
             "AssetGUID": "a5487586cd26d1346a724613b29dd483",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 2240538,
+            "MainBundleSize": 2275897,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -511,7 +511,7 @@
             "AssetGUID": "fc80c01afa0f57f4f8e0a7d814aca1d1",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 2240538,
+            "MainBundleSize": 2275897,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -521,7 +521,7 @@
             "AssetGUID": "369b3d85fc39e0d4c916b166f98fcb51",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 2240538,
+            "MainBundleSize": 2275897,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -531,7 +531,7 @@
             "AssetGUID": "c3e2ab26747aca14e8e82e0767eb68ae",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 2240538,
+            "MainBundleSize": 2275897,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -541,7 +541,7 @@
             "AssetGUID": "077b3b7aa4778d744aed75214ab3cdb9",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 2240538,
+            "MainBundleSize": 2275897,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -551,7 +551,7 @@
             "AssetGUID": "c16149fda4da6a84fbd429166f7235cf",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 2240538,
+            "MainBundleSize": 2275897,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -561,7 +561,7 @@
             "AssetGUID": "9041d7a7e02bd734d889a9c8cd18718d",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "MainBundleSize": 2240538,
+            "MainBundleSize": 2275897,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -677,12 +677,113 @@
             "DependBundles": []
         },
         {
+            "Address": "Effect",
+            "AssetPath": "Assets/AssetRaw/Scenes/Effect.unity",
+            "AssetGUID": "d7949e9b21603ee4487b28b4a02e84c2",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_scenes.bundle",
+            "MainBundleSize": 355595,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Fantasy Skybox FREE/Panoramics/FS002/FS002_Night_Moonless.mat",
+                    "AssetGUID": "1cc6e6796f833a94f94e6d794ca654c3"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Models/Jammo_LowPoly.fbx",
+                    "AssetGUID": "82a2914d8f86c62488456950c8330e38"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/jammo_eyes.png",
+                    "AssetGUID": "09beef63c41c25b458d2f95fdfd9e0e5"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_AO.png",
+                    "AssetGUID": "6a0fb4aa4de843c45a776e5a4ac9dd69"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_MetallicSmoothness.png",
+                    "AssetGUID": "3a5a871d579c2da4094f823d674595eb"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_Normal.png",
+                    "AssetGUID": "f6c18262b3c0eba4bb830f3d91682a4f"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Jammo_Player.prefab",
+                    "AssetGUID": "bd6ee82c5e06b3f4f86113cbf8261ae1"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Player.prefab",
+                    "AssetGUID": "3a14fa075576f234f83b861b8ad6f0ad"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+                    "AssetGUID": "6b64f85c5ee58984a8e4d87ffdce9b5d"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+                    "AssetGUID": "2e5cbd52f3af8384fafcc9a73ad2f1e0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+                    "AssetGUID": "6fd7082454b5e8f4eaef795e9a384dfa"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Fist Pump.anim",
+                    "AssetGUID": "9320442ecbaf905429dac366ee003323"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/PlayerAnimator.controller",
+                    "AssetGUID": "8b86b0a80d723d8429e8da554af3f4d7"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_eyes.mat",
+                    "AssetGUID": "d5c0dc78f40c06c4e9356a3218da955b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_metal.mat",
+                    "AssetGUID": "60c2f0e0aaa8f8d4e9d23d7e3768653b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/mixbot_low_mixamo_edit1_AlbedoTransparency.png",
+                    "AssetGUID": "fb6e06c953f0d8045bc58e0f5a640f07"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_black.psd",
+                    "AssetGUID": "c9fd4ccfc3404b04eae3cd87e40a8e2e"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_blue.psd",
+                    "AssetGUID": "10c532508a2453a48aa766e69193d105"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_yellow.psd",
+                    "AssetGUID": "f61e83171850a834788a4664dbb54eae"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Common/FS002_Night_Moonless.png",
+                    "AssetGUID": "13ec4f589b2340646969832fc2e68ec6"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_animations.bundle",
+                "defaultpackage_assets_assetraw_animations_default.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle"
+            ]
+        },
+        {
             "Address": "Game",
             "AssetPath": "Assets/AssetRaw/Scenes/Game.unity",
             "AssetGUID": "0491a35e0113f244ca4df05d03645ab2",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_scenes.bundle",
-            "MainBundleSize": 211756,
+            "MainBundleSize": 355595,
             "DependAssets": [
                 {
                     "AssetPath": "Assets/AddRes/Jammo-Character/Models/Jammo_LowPoly.fbx",
@@ -777,7 +878,7 @@
             "AssetGUID": "0dbd5177f8fcea546b61a0fafa03dd4f",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_scenes.bundle",
-            "MainBundleSize": 211756,
+            "MainBundleSize": 355595,
             "DependAssets": [
                 {
                     "AssetPath": "Assets/AddRes/Fantasy Skybox FREE/Panoramics/FS002/FS002_Day.png",
@@ -803,7 +904,7 @@
             "AssetGUID": "75322b53b8e01174ba40e4279cf24614",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
-            "MainBundleSize": 21980,
+            "MainBundleSize": 22030,
             "DependAssets": [
                 {
                     "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_bg.png",
@@ -844,7 +945,7 @@
             "AssetGUID": "082b0263138a031469f1d5e7b796837a",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
-            "MainBundleSize": 21980,
+            "MainBundleSize": 22030,
             "DependAssets": [
                 {
                     "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png",
@@ -876,7 +977,7 @@
             "AssetGUID": "3f4849d649e5a9647acda84aea936e20",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
-            "MainBundleSize": 21980,
+            "MainBundleSize": 22030,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -886,7 +987,7 @@
             "AssetGUID": "9b969a6a722855c47be887dacd539056",
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
-            "MainBundleSize": 21980,
+            "MainBundleSize": 22030,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -927,6 +1028,16 @@
             "AssetTags": [],
             "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
             "MainBundleSize": 2691610,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "FS002_Night_Moonless",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Common/FS002_Night_Moonless.png",
+            "AssetGUID": "13ec4f589b2340646969832fc2e68ec6",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
+            "MainBundleSize": 1478280,
             "DependAssets": [],
             "DependBundles": []
         },
@@ -1015,6 +1126,7 @@
                 "defaultpackage_assets_assetraw_animations_default.bundle",
                 "defaultpackage_assets_assetraw_materials_material.bundle",
                 "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
                 "defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle",
                 "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
                 "defaultpackage_share_assets_addres_jammo-character_models.bundle",
@@ -1046,10 +1158,10 @@
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_animations.bundle",
-            "FileName": "1cf76eb13b0839536ea318b9b7e3b076.bundle",
-            "FileHash": "1cf76eb13b0839536ea318b9b7e3b076",
-            "FileCRC": "018059a5",
-            "FileSize": 292862,
+            "FileName": "a76cd4be0788f68f0387445768a6f0b0.bundle",
+            "FileHash": "a76cd4be0788f68f0387445768a6f0b0",
+            "FileCRC": "45a41c5d",
+            "FileSize": 292868,
             "Encrypted": false,
             "Tags": [],
             "DependBundles": [
@@ -1179,10 +1291,10 @@
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_dll.bundle",
-            "FileName": "07745053cb080071647291f555bfd4b7.bundle",
-            "FileHash": "07745053cb080071647291f555bfd4b7",
-            "FileCRC": "80112f4b",
-            "FileSize": 2240538,
+            "FileName": "b7ee5e360047492699a697a7f6f4a5c1.bundle",
+            "FileHash": "b7ee5e360047492699a697a7f6f4a5c1",
+            "FileCRC": "14b4118a",
+            "FileSize": 2275897,
             "Encrypted": false,
             "Tags": [],
             "DependBundles": [],
@@ -1232,6 +1344,7 @@
             "Tags": [],
             "DependBundles": [
                 "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
                 "defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle",
                 "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
                 "defaultpackage_share_assets_addres_jammo-character_textures.bundle"
@@ -1274,10 +1387,10 @@
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_scenes.bundle",
-            "FileName": "0c68c31c194e201677c63d89143c0f85.bundle",
-            "FileHash": "0c68c31c194e201677c63d89143c0f85",
-            "FileCRC": "1e139054",
-            "FileSize": 211756,
+            "FileName": "a7d74db5b90fb18aa4713ee04c3bba00.bundle",
+            "FileHash": "a7d74db5b90fb18aa4713ee04c3bba00",
+            "FileCRC": "b91696ef",
+            "FileSize": 355595,
             "Encrypted": false,
             "Tags": [],
             "DependBundles": [
@@ -1286,6 +1399,7 @@
                 "defaultpackage_assets_assetraw_animations_default.bundle",
                 "defaultpackage_assets_assetraw_materials_material.bundle",
                 "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
                 "defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle",
                 "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
                 "defaultpackage_share_assets_addres_jammo-character_models.bundle",
@@ -1295,6 +1409,10 @@
             ],
             "ReferenceBundles": [],
             "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Scenes/Effect.unity",
+                    "AssetGUID": "d7949e9b21603ee4487b28b4a02e84c2"
+                },
                 {
                     "AssetPath": "Assets/AssetRaw/Scenes/Game.unity",
                     "AssetGUID": "0491a35e0113f244ca4df05d03645ab2"
@@ -1307,10 +1425,10 @@
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_ui.bundle",
-            "FileName": "d3d71ae9fbd5498497e33b4c03a0d75e.bundle",
-            "FileHash": "d3d71ae9fbd5498497e33b4c03a0d75e",
-            "FileCRC": "774db2c0",
-            "FileSize": 21980,
+            "FileName": "4aa3e42cdb466b351073878206951411.bundle",
+            "FileHash": "4aa3e42cdb466b351073878206951411",
+            "FileCRC": "9ecca458",
+            "FileSize": 22030,
             "Encrypted": false,
             "Tags": [],
             "DependBundles": [
@@ -1340,9 +1458,9 @@
         },
         {
             "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
-            "FileName": "66287956123b684155e440461c7042d8.bundle",
-            "FileHash": "66287956123b684155e440461c7042d8",
-            "FileCRC": "74c6f10e",
+            "FileName": "b7608f4995d5a1187638b867868e71d5.bundle",
+            "FileHash": "b7608f4995d5a1187638b867868e71d5",
+            "FileCRC": "7fc5a4cf",
             "FileSize": 2691610,
             "Encrypted": false,
             "Tags": [],
@@ -1369,6 +1487,29 @@
                 {
                     "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_yellow.psd",
                     "AssetGUID": "f61e83171850a834788a4664dbb54eae"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
+            "FileName": "805a2ae3c558dea74811ed7e010ef56b.bundle",
+            "FileHash": "805a2ae3c558dea74811ed7e010ef56b",
+            "FileCRC": "9e7f22b4",
+            "FileSize": 1478280,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Common/FS002_Night_Moonless.png",
+                    "AssetGUID": "13ec4f589b2340646969832fc2e68ec6"
                 }
             ]
         },
@@ -1439,13 +1580,15 @@
         },
         {
             "BundleName": "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
-            "FileName": "18e18d1936e9a584775880d7502517d2.bundle",
-            "FileHash": "18e18d1936e9a584775880d7502517d2",
-            "FileCRC": "ee3010c8",
-            "FileSize": 1118705,
+            "FileName": "9b1b7b766db2b105c768b5d1ca8da9f3.bundle",
+            "FileHash": "9b1b7b766db2b105c768b5d1ca8da9f3",
+            "FileCRC": "ed7d0848",
+            "FileSize": 1140936,
             "Encrypted": false,
             "Tags": [],
-            "DependBundles": [],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle"
+            ],
             "ReferenceBundles": [
                 "defaultpackage_assets_assetraw_actor_game.bundle",
                 "defaultpackage_assets_assetraw_materials_material.bundle",
@@ -1456,6 +1599,10 @@
                 {
                     "AssetPath": "Assets/AddRes/Fantasy Skybox FREE/Panoramics/FS002/FS002_Day.png",
                     "AssetGUID": "90bac99dc822bf641b140cdc291b845e"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Fantasy Skybox FREE/Panoramics/FS002/FS002_Night_Moonless.mat",
+                    "AssetGUID": "1cc6e6796f833a94f94e6d794ca654c3"
                 }
             ]
         },
@@ -1470,6 +1617,7 @@
             "DependBundles": [
                 "defaultpackage_assets_assetraw_materials_material.bundle",
                 "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
                 "defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle",
                 "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
                 "defaultpackage_share_assets_addres_jammo-character_textures.bundle"

@@ -49,9 +49,9 @@ public class LoginUIClient : MonoBehaviour
     
     private void OnClickLoginBtn()
     {
-
-        ConnectServer();
-        SendLoginMessage();
+        _textLogin.gameObject.SetActive(true);
+        // ConnectServer();
+        // SendLoginMessage();
     }
 
     private void OnClickUpdateBtn()
