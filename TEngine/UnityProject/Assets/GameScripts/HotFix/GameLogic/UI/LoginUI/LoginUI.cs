@@ -46,8 +46,8 @@ namespace GameLogic
             {
                 // cts?.Cancel();
                 this.Close();
-                GameModule.Scene.LoadSceneAsync("Effect");
-                GameModule.UI.ShowUIAsync<HsTestUI>();
+                // GameModule.Scene.LoadSceneAsync("Effect");
+                GameModule.UI.ShowUIAsync<OptionUI>();
             }
         }
 

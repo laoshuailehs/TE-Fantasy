@@ -1,0 +1,1688 @@
+{
+    "Summary": {
+        "YooVersion": "2.3.8",
+        "UnityVersion": "2021.3.28f1",
+        "BuildDate": "2025/6/4 11:51:50",
+        "BuildSeconds": 13,
+        "BuildTarget": 13,
+        "BuildPipeline": "BuiltinBuildPipeline",
+        "BuildBundleType": 2,
+        "BuildPackageName": "DefaultPackage",
+        "BuildPackageVersion": "2025-06-04-711",
+        "BuildPackageNote": "2025/6/4 11:51:35",
+        "UniqueBundleName": true,
+        "EnableAddressable": true,
+        "LocationToLower": false,
+        "IncludeAssetGUID": false,
+        "AutoCollectShaders": true,
+        "IgnoreRuleName": "YooAsset.Editor.NormalIgnoreRule",
+        "ClearBuildCacheFiles": true,
+        "UseAssetDependencyDB": false,
+        "EnableSharePackRule": true,
+        "SingleReferencedPackAlone": true,
+        "EncryptionClassName": "null",
+        "FileNameStyle": 0,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": true,
+        "WriteLinkXML": true,
+        "CacheServerHost": "",
+        "CacheServerPort": 0,
+        "BuiltinShadersBundleName": "",
+        "MonoScriptsBundleName": "",
+        "AssetFileTotalCount": 65,
+        "MainAssetTotalCount": 56,
+        "AllBundleTotalCount": 18,
+        "AllBundleTotalSize": 20771213,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "Cube",
+            "AssetPath": "Assets/AssetRaw/Actor/Game/Cube.prefab",
+            "AssetGUID": "14515f8505976b04fbdd66ddc61a661c",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_actor_game.bundle",
+            "MainBundleSize": 4062098,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png",
+                    "AssetGUID": "5b56d9fa0e8bd6e409ed188db38a692c"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/Handles/Handle_Plain.png",
+                    "AssetGUID": "010a6e5305fa7004f89c5d317b7b47d4"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Variable Joystick.prefab",
+                    "AssetGUID": "ec536a7718376554185e4a856d5ae230"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/cube.mat",
+                    "AssetGUID": "ef66f761ad8fe9f40a0ea0426ec7ba77"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ]
+        },
+        {
+            "Address": "Jammo_Player",
+            "AssetPath": "Assets/AssetRaw/Actor/Game/Jammo_Player.prefab",
+            "AssetGUID": "bd6ee82c5e06b3f4f86113cbf8261ae1",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_actor_game.bundle",
+            "MainBundleSize": 4062098,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Models/Jammo_LowPoly.fbx",
+                    "AssetGUID": "82a2914d8f86c62488456950c8330e38"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/jammo_eyes.png",
+                    "AssetGUID": "09beef63c41c25b458d2f95fdfd9e0e5"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_AO.png",
+                    "AssetGUID": "6a0fb4aa4de843c45a776e5a4ac9dd69"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_MetallicSmoothness.png",
+                    "AssetGUID": "3a5a871d579c2da4094f823d674595eb"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_Normal.png",
+                    "AssetGUID": "f6c18262b3c0eba4bb830f3d91682a4f"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+                    "AssetGUID": "6b64f85c5ee58984a8e4d87ffdce9b5d"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+                    "AssetGUID": "2e5cbd52f3af8384fafcc9a73ad2f1e0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+                    "AssetGUID": "6fd7082454b5e8f4eaef795e9a384dfa"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Fist Pump.anim",
+                    "AssetGUID": "9320442ecbaf905429dac366ee003323"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/PlayerAnimator.controller",
+                    "AssetGUID": "8b86b0a80d723d8429e8da554af3f4d7"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_eyes.mat",
+                    "AssetGUID": "d5c0dc78f40c06c4e9356a3218da955b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_metal.mat",
+                    "AssetGUID": "60c2f0e0aaa8f8d4e9d23d7e3768653b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/mixbot_low_mixamo_edit1_AlbedoTransparency.png",
+                    "AssetGUID": "fb6e06c953f0d8045bc58e0f5a640f07"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_black.psd",
+                    "AssetGUID": "c9fd4ccfc3404b04eae3cd87e40a8e2e"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_blue.psd",
+                    "AssetGUID": "10c532508a2453a48aa766e69193d105"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_yellow.psd",
+                    "AssetGUID": "f61e83171850a834788a4664dbb54eae"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_animations.bundle",
+                "defaultpackage_assets_assetraw_animations_default.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle"
+            ]
+        },
+        {
+            "Address": "Player",
+            "AssetPath": "Assets/AssetRaw/Actor/Game/Player.prefab",
+            "AssetGUID": "3a14fa075576f234f83b861b8ad6f0ad",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_actor_game.bundle",
+            "MainBundleSize": 4062098,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Models/Jammo_LowPoly.fbx",
+                    "AssetGUID": "82a2914d8f86c62488456950c8330e38"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/jammo_eyes.png",
+                    "AssetGUID": "09beef63c41c25b458d2f95fdfd9e0e5"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_AO.png",
+                    "AssetGUID": "6a0fb4aa4de843c45a776e5a4ac9dd69"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_MetallicSmoothness.png",
+                    "AssetGUID": "3a5a871d579c2da4094f823d674595eb"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_Normal.png",
+                    "AssetGUID": "f6c18262b3c0eba4bb830f3d91682a4f"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Jammo_Player.prefab",
+                    "AssetGUID": "bd6ee82c5e06b3f4f86113cbf8261ae1"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+                    "AssetGUID": "6b64f85c5ee58984a8e4d87ffdce9b5d"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+                    "AssetGUID": "2e5cbd52f3af8384fafcc9a73ad2f1e0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+                    "AssetGUID": "6fd7082454b5e8f4eaef795e9a384dfa"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Fist Pump.anim",
+                    "AssetGUID": "9320442ecbaf905429dac366ee003323"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/PlayerAnimator.controller",
+                    "AssetGUID": "8b86b0a80d723d8429e8da554af3f4d7"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_eyes.mat",
+                    "AssetGUID": "d5c0dc78f40c06c4e9356a3218da955b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_metal.mat",
+                    "AssetGUID": "60c2f0e0aaa8f8d4e9d23d7e3768653b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/mixbot_low_mixamo_edit1_AlbedoTransparency.png",
+                    "AssetGUID": "fb6e06c953f0d8045bc58e0f5a640f07"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_black.psd",
+                    "AssetGUID": "c9fd4ccfc3404b04eae3cd87e40a8e2e"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_blue.psd",
+                    "AssetGUID": "10c532508a2453a48aa766e69193d105"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_yellow.psd",
+                    "AssetGUID": "f61e83171850a834788a4664dbb54eae"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_animations.bundle",
+                "defaultpackage_assets_assetraw_animations_default.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle"
+            ]
+        },
+        {
+            "Address": "Variable Joystick",
+            "AssetPath": "Assets/AssetRaw/Actor/Game/Variable Joystick.prefab",
+            "AssetGUID": "ec536a7718376554185e4a856d5ae230",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_actor_game.bundle",
+            "MainBundleSize": 4062098,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png",
+                    "AssetGUID": "5b56d9fa0e8bd6e409ed188db38a692c"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/Handles/Handle_Plain.png",
+                    "AssetGUID": "010a6e5305fa7004f89c5d317b7b47d4"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ]
+        },
+        {
+            "Address": "AnimatorController_Jamo",
+            "AssetPath": "Assets/AssetRaw/Animations/AnimatorController_Jamo.controller",
+            "AssetGUID": "535d24752e3d6444da644e79e90ec2ca",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
+            "MainBundleSize": 292869,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+                    "AssetGUID": "6b64f85c5ee58984a8e4d87ffdce9b5d"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Battle.anim",
+                    "AssetGUID": "6bd646364b2a3db42bcd783601e3d363"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Happy.anim",
+                    "AssetGUID": "9045b628a2e38a246a988d3abea05c36"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Scared.anim",
+                    "AssetGUID": "23c0d86c9ee13b14e989e8dbcb08489a"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+                    "AssetGUID": "2e5cbd52f3af8384fafcc9a73ad2f1e0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+                    "AssetGUID": "6fd7082454b5e8f4eaef795e9a384dfa"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_animations_default.bundle"
+            ]
+        },
+        {
+            "Address": "a_Idle",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+            "AssetGUID": "6b64f85c5ee58984a8e4d87ffdce9b5d",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations_default.bundle",
+            "MainBundleSize": 240822,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "a_Idle_Battle",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Battle.anim",
+            "AssetGUID": "6bd646364b2a3db42bcd783601e3d363",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations_default.bundle",
+            "MainBundleSize": 240822,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "a_Idle_Happy",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Happy.anim",
+            "AssetGUID": "9045b628a2e38a246a988d3abea05c36",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations_default.bundle",
+            "MainBundleSize": 240822,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "a_Idle_Relaxed",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Relaxed.anim",
+            "AssetGUID": "b2cad9ba00286364bad6feeb3b9d5b8c",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations_default.bundle",
+            "MainBundleSize": 240822,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "a_Idle_Scared",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Scared.anim",
+            "AssetGUID": "23c0d86c9ee13b14e989e8dbcb08489a",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations_default.bundle",
+            "MainBundleSize": 240822,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "a_Running",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+            "AssetGUID": "2e5cbd52f3af8384fafcc9a73ad2f1e0",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations_default.bundle",
+            "MainBundleSize": 240822,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "a_Walking",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+            "AssetGUID": "6fd7082454b5e8f4eaef795e9a384dfa",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations_default.bundle",
+            "MainBundleSize": 240822,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Falling To Landing",
+            "AssetPath": "Assets/AssetRaw/Animations/Falling To Landing.anim",
+            "AssetGUID": "aa2bb98b035ff55448dc2b05f2e04251",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
+            "MainBundleSize": 292869,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Fist Pump",
+            "AssetPath": "Assets/AssetRaw/Animations/Fist Pump.anim",
+            "AssetGUID": "9320442ecbaf905429dac366ee003323",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
+            "MainBundleSize": 292869,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Jump",
+            "AssetPath": "Assets/AssetRaw/Animations/Jump.anim",
+            "AssetGUID": "e7fa3aa78b48c584fbee583a7c532655",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
+            "MainBundleSize": 292869,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "PlayerAnimator",
+            "AssetPath": "Assets/AssetRaw/Animations/PlayerAnimator.controller",
+            "AssetGUID": "8b86b0a80d723d8429e8da554af3f4d7",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
+            "MainBundleSize": 292869,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+                    "AssetGUID": "6b64f85c5ee58984a8e4d87ffdce9b5d"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+                    "AssetGUID": "2e5cbd52f3af8384fafcc9a73ad2f1e0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+                    "AssetGUID": "6fd7082454b5e8f4eaef795e9a384dfa"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Fist Pump.anim",
+                    "AssetGUID": "9320442ecbaf905429dac366ee003323"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_animations_default.bundle"
+            ]
+        },
+        {
+            "Address": "Standing",
+            "AssetPath": "Assets/AssetRaw/Animations/Standing.anim",
+            "AssetGUID": "d85664db4b473f64fb198bcc5a3c7099",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
+            "MainBundleSize": 292869,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Victory Idle",
+            "AssetPath": "Assets/AssetRaw/Animations/Victory Idle.anim",
+            "AssetGUID": "13a6028bbfeabbe4a91cb3339acabfa4",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_animations.bundle",
+            "MainBundleSize": 292869,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "about",
+            "AssetPath": "Assets/AssetRaw/Configs/about.txt",
+            "AssetGUID": "ba11f0707eb5f814392cbf12498aba94",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_configs.bundle",
+            "MainBundleSize": 1238,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "item_tbitem",
+            "AssetPath": "Assets/AssetRaw/Configs/bytes/item_tbitem.bytes",
+            "AssetGUID": "e43100abff3365241928b495bf0e5447",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_configs_bytes.bundle",
+            "MainBundleSize": 1681,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "logininfo_tbinfo",
+            "AssetPath": "Assets/AssetRaw/Configs/bytes/logininfo_tbinfo.bytes",
+            "AssetGUID": "a6fbcbd0461dc684999738d09a490933",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_configs_bytes.bundle",
+            "MainBundleSize": 1681,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "ybtest_tb",
+            "AssetPath": "Assets/AssetRaw/Configs/bytes/ybtest_tb.bytes",
+            "AssetGUID": "92a46d60c622d4546a9c004dd6d0fea7",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_configs_bytes.bundle",
+            "MainBundleSize": 1681,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "GameLogic.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/GameLogic.dll.bytes",
+            "AssetGUID": "7fb892396cfde944e85057744fcb4296",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "GameProto.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/GameProto.dll.bytes",
+            "AssetGUID": "a5487586cd26d1346a724613b29dd483",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "mscorlib.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/mscorlib.dll.bytes",
+            "AssetGUID": "fc80c01afa0f57f4f8e0a7d814aca1d1",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "System.Core.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/System.Core.dll.bytes",
+            "AssetGUID": "369b3d85fc39e0d4c916b166f98fcb51",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "System.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/System.dll.bytes",
+            "AssetGUID": "c3e2ab26747aca14e8e82e0767eb68ae",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "TEngine.Runtime.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/TEngine.Runtime.dll.bytes",
+            "AssetGUID": "077b3b7aa4778d744aed75214ab3cdb9",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "UniTask.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/UniTask.dll.bytes",
+            "AssetGUID": "c16149fda4da6a84fbd429166f7235cf",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "YooAsset.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/YooAsset.dll.bytes",
+            "AssetGUID": "9041d7a7e02bd734d889a9c8cd18718d",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "cube",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/cube.mat",
+            "AssetGUID": "ef66f761ad8fe9f40a0ea0426ec7ba77",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "MainBundleSize": 1388627,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "FS000_Night_02",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/FS000_Night_02.mat",
+            "AssetGUID": "8202c457dff32486ba5ae1f2f548d983",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "MainBundleSize": 1388627,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_02.png",
+                    "AssetGUID": "e60c8653c33d3da4d8f660c15214d3ac"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle"
+            ]
+        },
+        {
+            "Address": "FS002_Day",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/FS002_Day.mat",
+            "AssetGUID": "9ca22510633fbfd4399f1704cd9d5c72",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "MainBundleSize": 1388627,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Fantasy Skybox FREE/Panoramics/FS002/FS002_Day.png",
+                    "AssetGUID": "90bac99dc822bf641b140cdc291b845e"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle"
+            ]
+        },
+        {
+            "Address": "m_ground",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/m_ground.mat",
+            "AssetGUID": "ac02e0546055b854f8600e1708139ff8",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "MainBundleSize": 1388627,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "m_jammo_eyes",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_eyes.mat",
+            "AssetGUID": "d5c0dc78f40c06c4e9356a3218da955b",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "MainBundleSize": 1388627,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/jammo_eyes.png",
+                    "AssetGUID": "09beef63c41c25b458d2f95fdfd9e0e5"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle"
+            ]
+        },
+        {
+            "Address": "m_jammo_metal",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_metal.mat",
+            "AssetGUID": "60c2f0e0aaa8f8d4e9d23d7e3768653b",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "MainBundleSize": 1388627,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_AO.png",
+                    "AssetGUID": "6a0fb4aa4de843c45a776e5a4ac9dd69"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_MetallicSmoothness.png",
+                    "AssetGUID": "3a5a871d579c2da4094f823d674595eb"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_Normal.png",
+                    "AssetGUID": "f6c18262b3c0eba4bb830f3d91682a4f"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/mixbot_low_mixamo_edit1_AlbedoTransparency.png",
+                    "AssetGUID": "fb6e06c953f0d8045bc58e0f5a640f07"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle"
+            ]
+        },
+        {
+            "Address": "Skybox",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/Skybox.mat",
+            "AssetGUID": "d69071256986a1c4bb4872d222c6ae6e",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "MainBundleSize": 1388627,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Effect",
+            "AssetPath": "Assets/AssetRaw/Scenes/Effect.unity",
+            "AssetGUID": "d7949e9b21603ee4487b28b4a02e84c2",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_scenes.bundle",
+            "MainBundleSize": 632248,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Models/Jammo_LowPoly.fbx",
+                    "AssetGUID": "82a2914d8f86c62488456950c8330e38"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/jammo_eyes.png",
+                    "AssetGUID": "09beef63c41c25b458d2f95fdfd9e0e5"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_AO.png",
+                    "AssetGUID": "6a0fb4aa4de843c45a776e5a4ac9dd69"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_MetallicSmoothness.png",
+                    "AssetGUID": "3a5a871d579c2da4094f823d674595eb"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_Normal.png",
+                    "AssetGUID": "f6c18262b3c0eba4bb830f3d91682a4f"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Jammo_Player.prefab",
+                    "AssetGUID": "bd6ee82c5e06b3f4f86113cbf8261ae1"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Player.prefab",
+                    "AssetGUID": "3a14fa075576f234f83b861b8ad6f0ad"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+                    "AssetGUID": "6b64f85c5ee58984a8e4d87ffdce9b5d"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+                    "AssetGUID": "2e5cbd52f3af8384fafcc9a73ad2f1e0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+                    "AssetGUID": "6fd7082454b5e8f4eaef795e9a384dfa"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Fist Pump.anim",
+                    "AssetGUID": "9320442ecbaf905429dac366ee003323"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/PlayerAnimator.controller",
+                    "AssetGUID": "8b86b0a80d723d8429e8da554af3f4d7"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_eyes.mat",
+                    "AssetGUID": "d5c0dc78f40c06c4e9356a3218da955b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_metal.mat",
+                    "AssetGUID": "60c2f0e0aaa8f8d4e9d23d7e3768653b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/mixbot_low_mixamo_edit1_AlbedoTransparency.png",
+                    "AssetGUID": "fb6e06c953f0d8045bc58e0f5a640f07"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_black.psd",
+                    "AssetGUID": "c9fd4ccfc3404b04eae3cd87e40a8e2e"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_blue.psd",
+                    "AssetGUID": "10c532508a2453a48aa766e69193d105"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_yellow.psd",
+                    "AssetGUID": "f61e83171850a834788a4664dbb54eae"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_animations.bundle",
+                "defaultpackage_assets_assetraw_animations_default.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle"
+            ]
+        },
+        {
+            "Address": "Game",
+            "AssetPath": "Assets/AssetRaw/Scenes/Game.unity",
+            "AssetGUID": "0491a35e0113f244ca4df05d03645ab2",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_scenes.bundle",
+            "MainBundleSize": 632248,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Models/Jammo_LowPoly.fbx",
+                    "AssetGUID": "82a2914d8f86c62488456950c8330e38"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/jammo_eyes.png",
+                    "AssetGUID": "09beef63c41c25b458d2f95fdfd9e0e5"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_AO.png",
+                    "AssetGUID": "6a0fb4aa4de843c45a776e5a4ac9dd69"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_MetallicSmoothness.png",
+                    "AssetGUID": "3a5a871d579c2da4094f823d674595eb"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_Normal.png",
+                    "AssetGUID": "f6c18262b3c0eba4bb830f3d91682a4f"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Jammo_Player.prefab",
+                    "AssetGUID": "bd6ee82c5e06b3f4f86113cbf8261ae1"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Player.prefab",
+                    "AssetGUID": "3a14fa075576f234f83b861b8ad6f0ad"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+                    "AssetGUID": "6b64f85c5ee58984a8e4d87ffdce9b5d"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+                    "AssetGUID": "2e5cbd52f3af8384fafcc9a73ad2f1e0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+                    "AssetGUID": "6fd7082454b5e8f4eaef795e9a384dfa"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Fist Pump.anim",
+                    "AssetGUID": "9320442ecbaf905429dac366ee003323"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/PlayerAnimator.controller",
+                    "AssetGUID": "8b86b0a80d723d8429e8da554af3f4d7"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_eyes.mat",
+                    "AssetGUID": "d5c0dc78f40c06c4e9356a3218da955b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_metal.mat",
+                    "AssetGUID": "60c2f0e0aaa8f8d4e9d23d7e3768653b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/Skybox.mat",
+                    "AssetGUID": "d69071256986a1c4bb4872d222c6ae6e"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/mixbot_low_mixamo_edit1_AlbedoTransparency.png",
+                    "AssetGUID": "fb6e06c953f0d8045bc58e0f5a640f07"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_black.psd",
+                    "AssetGUID": "c9fd4ccfc3404b04eae3cd87e40a8e2e"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_blue.psd",
+                    "AssetGUID": "10c532508a2453a48aa766e69193d105"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_yellow.psd",
+                    "AssetGUID": "f61e83171850a834788a4664dbb54eae"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_animations.bundle",
+                "defaultpackage_assets_assetraw_animations_default.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle"
+            ]
+        },
+        {
+            "Address": "hs",
+            "AssetPath": "Assets/AssetRaw/Scenes/hs.unity",
+            "AssetGUID": "0dbd5177f8fcea546b61a0fafa03dd4f",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_scenes.bundle",
+            "MainBundleSize": 632248,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Fantasy Skybox FREE/Panoramics/FS002/FS002_Day.png",
+                    "AssetGUID": "90bac99dc822bf641b140cdc291b845e"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/cube.mat",
+                    "AssetGUID": "ef66f761ad8fe9f40a0ea0426ec7ba77"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/FS002_Day.mat",
+                    "AssetGUID": "9ca22510633fbfd4399f1704cd9d5c72"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle"
+            ]
+        },
+        {
+            "Address": "BattleMainUI",
+            "AssetPath": "Assets/AssetRaw/UI/BattleMainUI.prefab",
+            "AssetGUID": "75322b53b8e01174ba40e4279cf24614",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "MainBundleSize": 22030,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_bg.png",
+                    "AssetGUID": "f43899c31dd434901b0422f98bcde88b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_handle.png",
+                    "AssetGUID": "01ccaea9b49214edda39f03f648b5b8b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Blue.png",
+                    "AssetGUID": "1f44cb90b6ae648c783dac573bfe9cd0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Red.png",
+                    "AssetGUID": "bfad0e64f8ef1491c8def7e679187b89"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Yellow.png",
+                    "AssetGUID": "af67f6c46933441daaa64d6880890586"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Frame.png",
+                    "AssetGUID": "c95935206d18f42399e9881ce6bdf61c"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/zd_img_light.png",
+                    "AssetGUID": "a43cb397a444ce44f9becc183ced96ed"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle"
+            ]
+        },
+        {
+            "Address": "HsTestUI",
+            "AssetPath": "Assets/AssetRaw/UI/HsTestUI.prefab",
+            "AssetGUID": "082b0263138a031469f1d5e7b796837a",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "MainBundleSize": 22030,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png",
+                    "AssetGUID": "5b56d9fa0e8bd6e409ed188db38a692c"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/Handles/Handle_Plain.png",
+                    "AssetGUID": "010a6e5305fa7004f89c5d317b7b47d4"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Variable Joystick.prefab",
+                    "AssetGUID": "ec536a7718376554185e4a856d5ae230"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/zd_img_light.png",
+                    "AssetGUID": "a43cb397a444ce44f9becc183ced96ed"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ]
+        },
+        {
+            "Address": "LoginUI",
+            "AssetPath": "Assets/AssetRaw/UI/LoginUI.prefab",
+            "AssetGUID": "3f4849d649e5a9647acda84aea936e20",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "MainBundleSize": 22030,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "TestUI",
+            "AssetPath": "Assets/AssetRaw/UI/TestUI.prefab",
+            "AssetGUID": "9b969a6a722855c47be887dacd539056",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "MainBundleSize": 22030,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "mixbot_low_mixamo_edit1_AlbedoTransparency",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/mixbot_low_mixamo_edit1_AlbedoTransparency.png",
+            "AssetGUID": "fb6e06c953f0d8045bc58e0f5a640f07",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+            "MainBundleSize": 3530605,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "t_jammo_black",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_black.psd",
+            "AssetGUID": "c9fd4ccfc3404b04eae3cd87e40a8e2e",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+            "MainBundleSize": 3530605,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "t_jammo_blue",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_blue.psd",
+            "AssetGUID": "10c532508a2453a48aa766e69193d105",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+            "MainBundleSize": 3530605,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "t_jammo_yellow",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_yellow.psd",
+            "AssetGUID": "f61e83171850a834788a4664dbb54eae",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+            "MainBundleSize": 3530605,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "FS002_Night_Moonless",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Common/FS002_Night_Moonless.png",
+            "AssetGUID": "13ec4f589b2340646969832fc2e68ec6",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
+            "MainBundleSize": 1630411,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Play_Joystick_bg",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_bg.png",
+            "AssetGUID": "f43899c31dd434901b0422f98bcde88b",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 27805,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Play_Joystick_handle",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_handle.png",
+            "AssetGUID": "01ccaea9b49214edda39f03f648b5b8b",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 27805,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Slider11_Fill_Blue",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Blue.png",
+            "AssetGUID": "1f44cb90b6ae648c783dac573bfe9cd0",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 27805,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Slider11_Fill_Red",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Red.png",
+            "AssetGUID": "bfad0e64f8ef1491c8def7e679187b89",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 27805,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Slider11_Fill_Yellow",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Yellow.png",
+            "AssetGUID": "af67f6c46933441daaa64d6880890586",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 27805,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Slider11_Frame",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Frame.png",
+            "AssetGUID": "c95935206d18f42399e9881ce6bdf61c",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 27805,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "zd_img_light",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/zd_img_light.png",
+            "AssetGUID": "a43cb397a444ce44f9becc183ced96ed",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 27805,
+            "DependAssets": [],
+            "DependBundles": []
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "defaultpackage_assets_assetraw_actor_game.bundle",
+            "FileName": "eb14b1da1a64b7a0a2a7281ed842f22e.bundle",
+            "FileHash": "eb14b1da1a64b7a0a2a7281ed842f22e",
+            "FileCRC": "172bf024",
+            "FileSize": 4062098,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_animations.bundle",
+                "defaultpackage_assets_assetraw_animations_default.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Cube.prefab",
+                    "AssetGUID": "14515f8505976b04fbdd66ddc61a661c"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Jammo_Player.prefab",
+                    "AssetGUID": "bd6ee82c5e06b3f4f86113cbf8261ae1"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Player.prefab",
+                    "AssetGUID": "3a14fa075576f234f83b861b8ad6f0ad"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Variable Joystick.prefab",
+                    "AssetGUID": "ec536a7718376554185e4a856d5ae230"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_animations.bundle",
+            "FileName": "006cb0eb3e007a4590c2840ff8efde36.bundle",
+            "FileHash": "006cb0eb3e007a4590c2840ff8efde36",
+            "FileCRC": "a150c8c4",
+            "FileSize": 292869,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_animations_default.bundle"
+            ],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/AnimatorController_Jamo.controller",
+                    "AssetGUID": "535d24752e3d6444da644e79e90ec2ca"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Falling To Landing.anim",
+                    "AssetGUID": "aa2bb98b035ff55448dc2b05f2e04251"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Fist Pump.anim",
+                    "AssetGUID": "9320442ecbaf905429dac366ee003323"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Jump.anim",
+                    "AssetGUID": "e7fa3aa78b48c584fbee583a7c532655"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/PlayerAnimator.controller",
+                    "AssetGUID": "8b86b0a80d723d8429e8da554af3f4d7"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Standing.anim",
+                    "AssetGUID": "d85664db4b473f64fb198bcc5a3c7099"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Victory Idle.anim",
+                    "AssetGUID": "13a6028bbfeabbe4a91cb3339acabfa4"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_animations_default.bundle",
+            "FileName": "32300f8cb074d994a50b4a07867cde3a.bundle",
+            "FileHash": "32300f8cb074d994a50b4a07867cde3a",
+            "FileCRC": "c63185f8",
+            "FileSize": 240822,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_animations.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+                    "AssetGUID": "6b64f85c5ee58984a8e4d87ffdce9b5d"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Battle.anim",
+                    "AssetGUID": "6bd646364b2a3db42bcd783601e3d363"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Happy.anim",
+                    "AssetGUID": "9045b628a2e38a246a988d3abea05c36"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Relaxed.anim",
+                    "AssetGUID": "b2cad9ba00286364bad6feeb3b9d5b8c"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Scared.anim",
+                    "AssetGUID": "23c0d86c9ee13b14e989e8dbcb08489a"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+                    "AssetGUID": "2e5cbd52f3af8384fafcc9a73ad2f1e0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+                    "AssetGUID": "6fd7082454b5e8f4eaef795e9a384dfa"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_configs.bundle",
+            "FileName": "014805b588dfb1da63c283ae064a6445.bundle",
+            "FileHash": "014805b588dfb1da63c283ae064a6445",
+            "FileCRC": "8b041595",
+            "FileSize": 1238,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Configs/about.txt",
+                    "AssetGUID": "ba11f0707eb5f814392cbf12498aba94"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_configs_bytes.bundle",
+            "FileName": "b86d7f996f726554203fe9834547537d.bundle",
+            "FileHash": "b86d7f996f726554203fe9834547537d",
+            "FileCRC": "d95fa332",
+            "FileSize": 1681,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Configs/bytes/item_tbitem.bytes",
+                    "AssetGUID": "e43100abff3365241928b495bf0e5447"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Configs/bytes/logininfo_tbinfo.bytes",
+                    "AssetGUID": "a6fbcbd0461dc684999738d09a490933"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Configs/bytes/ybtest_tb.bytes",
+                    "AssetGUID": "92a46d60c622d4546a9c004dd6d0fea7"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "FileName": "d08dd15bb3e9a9763976c35dc954fb34.bundle",
+            "FileHash": "d08dd15bb3e9a9763976c35dc954fb34",
+            "FileCRC": "2cced646",
+            "FileSize": 2240538,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/GameLogic.dll.bytes",
+                    "AssetGUID": "7fb892396cfde944e85057744fcb4296"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/GameProto.dll.bytes",
+                    "AssetGUID": "a5487586cd26d1346a724613b29dd483"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/mscorlib.dll.bytes",
+                    "AssetGUID": "fc80c01afa0f57f4f8e0a7d814aca1d1"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/System.Core.dll.bytes",
+                    "AssetGUID": "369b3d85fc39e0d4c916b166f98fcb51"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/System.dll.bytes",
+                    "AssetGUID": "c3e2ab26747aca14e8e82e0767eb68ae"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/TEngine.Runtime.dll.bytes",
+                    "AssetGUID": "077b3b7aa4778d744aed75214ab3cdb9"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/UniTask.dll.bytes",
+                    "AssetGUID": "c16149fda4da6a84fbd429166f7235cf"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/YooAsset.dll.bytes",
+                    "AssetGUID": "9041d7a7e02bd734d889a9c8cd18718d"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "FileName": "ded1571b02467847ebb33f30c249ed84.bundle",
+            "FileHash": "ded1571b02467847ebb33f30c249ed84",
+            "FileCRC": "f07222de",
+            "FileSize": 1388627,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle"
+            ],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/cube.mat",
+                    "AssetGUID": "ef66f761ad8fe9f40a0ea0426ec7ba77"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/FS000_Night_02.mat",
+                    "AssetGUID": "8202c457dff32486ba5ae1f2f548d983"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/FS002_Day.mat",
+                    "AssetGUID": "9ca22510633fbfd4399f1704cd9d5c72"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_ground.mat",
+                    "AssetGUID": "ac02e0546055b854f8600e1708139ff8"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_eyes.mat",
+                    "AssetGUID": "d5c0dc78f40c06c4e9356a3218da955b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/m_jammo_metal.mat",
+                    "AssetGUID": "60c2f0e0aaa8f8d4e9d23d7e3768653b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/Skybox.mat",
+                    "AssetGUID": "d69071256986a1c4bb4872d222c6ae6e"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_scenes.bundle",
+            "FileName": "071cf2c92e05b44611e283305c71088e.bundle",
+            "FileHash": "071cf2c92e05b44611e283305c71088e",
+            "FileCRC": "79a022a8",
+            "FileSize": 632248,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_animations.bundle",
+                "defaultpackage_assets_assetraw_animations_default.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Scenes/Effect.unity",
+                    "AssetGUID": "d7949e9b21603ee4487b28b4a02e84c2"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Scenes/Game.unity",
+                    "AssetGUID": "0491a35e0113f244ca4df05d03645ab2"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Scenes/hs.unity",
+                    "AssetGUID": "0dbd5177f8fcea546b61a0fafa03dd4f"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "FileName": "d952949719f03bfc74a151d4dc590de2.bundle",
+            "FileHash": "d952949719f03bfc74a151d4dc590de2",
+            "FileCRC": "ef41c932",
+            "FileSize": 22030,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/UI/BattleMainUI.prefab",
+                    "AssetGUID": "75322b53b8e01174ba40e4279cf24614"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UI/HsTestUI.prefab",
+                    "AssetGUID": "082b0263138a031469f1d5e7b796837a"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UI/LoginUI.prefab",
+                    "AssetGUID": "3f4849d649e5a9647acda84aea936e20"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UI/TestUI.prefab",
+                    "AssetGUID": "9b969a6a722855c47be887dacd539056"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+            "FileName": "7473571e334685b5452efe27856c0930.bundle",
+            "FileHash": "7473571e334685b5452efe27856c0930",
+            "FileCRC": "02756923",
+            "FileSize": 3530605,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/mixbot_low_mixamo_edit1_AlbedoTransparency.png",
+                    "AssetGUID": "fb6e06c953f0d8045bc58e0f5a640f07"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_black.psd",
+                    "AssetGUID": "c9fd4ccfc3404b04eae3cd87e40a8e2e"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_blue.psd",
+                    "AssetGUID": "10c532508a2453a48aa766e69193d105"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_yellow.psd",
+                    "AssetGUID": "f61e83171850a834788a4664dbb54eae"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
+            "FileName": "8c401d1b536459b8d3e365e53ff19a02.bundle",
+            "FileHash": "8c401d1b536459b8d3e365e53ff19a02",
+            "FileCRC": "ddd1de92",
+            "FileSize": 1630411,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Common/FS002_Night_Moonless.png",
+                    "AssetGUID": "13ec4f589b2340646969832fc2e68ec6"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "FileName": "da38eb09e1f7c280e4beadaa90b0489f.bundle",
+            "FileHash": "da38eb09e1f7c280e4beadaa90b0489f",
+            "FileCRC": "ef821143",
+            "FileSize": 27805,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_ui.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_bg.png",
+                    "AssetGUID": "f43899c31dd434901b0422f98bcde88b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_handle.png",
+                    "AssetGUID": "01ccaea9b49214edda39f03f648b5b8b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Blue.png",
+                    "AssetGUID": "1f44cb90b6ae648c783dac573bfe9cd0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Red.png",
+                    "AssetGUID": "bfad0e64f8ef1491c8def7e679187b89"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Yellow.png",
+                    "AssetGUID": "af67f6c46933441daaa64d6880890586"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Frame.png",
+                    "AssetGUID": "c95935206d18f42399e9881ce6bdf61c"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/zd_img_light.png",
+                    "AssetGUID": "a43cb397a444ce44f9becc183ced96ed"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle",
+            "FileName": "bc07f0e3f393a88cb67fc6149a59bb49.bundle",
+            "FileHash": "bc07f0e3f393a88cb67fc6149a59bb49",
+            "FileCRC": "8723ea3b",
+            "FileSize": 351473,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AddRes/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Night_02.png",
+                    "AssetGUID": "e60c8653c33d3da4d8f660c15214d3ac"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
+            "FileName": "ce1e28708b62aa64dd3bb1bd405c6e72.bundle",
+            "FileHash": "ce1e28708b62aa64dd3bb1bd405c6e72",
+            "FileCRC": "4d64d656",
+            "FileSize": 1271514,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AddRes/Fantasy Skybox FREE/Panoramics/FS002/FS002_Day.png",
+                    "AssetGUID": "90bac99dc822bf641b140cdc291b845e"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_addres_jammo-character_models.bundle",
+            "FileName": "bb5216ab07407f31f3440fa5b744e624.bundle",
+            "FileHash": "bb5216ab07407f31f3440fa5b744e624",
+            "FileCRC": "9b651840",
+            "FileSize": 498320,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_cubemaps_classic.bundle",
+                "defaultpackage_share_assets_addres_fantasy_skybox_free_panoramics_fs002.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_textures.bundle"
+            ],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Models/Jammo_LowPoly.fbx",
+                    "AssetGUID": "82a2914d8f86c62488456950c8330e38"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_addres_jammo-character_textures.bundle",
+            "FileName": "c8a359d8eb3c7d4029038df112d06421.bundle",
+            "FileHash": "c8a359d8eb3c7d4029038df112d06421",
+            "FileCRC": "4b096b15",
+            "FileSize": 4558250,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle",
+                "defaultpackage_share_assets_addres_jammo-character_models.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/jammo_eyes.png",
+                    "AssetGUID": "09beef63c41c25b458d2f95fdfd9e0e5"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_AO.png",
+                    "AssetGUID": "6a0fb4aa4de843c45a776e5a4ac9dd69"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_MetallicSmoothness.png",
+                    "AssetGUID": "3a5a871d579c2da4094f823d674595eb"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Jammo-Character/Textures/mixbot_low_mixamo_edit1_Normal.png",
+                    "AssetGUID": "f6c18262b3c0eba4bb830f3d91682a4f"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+            "FileName": "e52ee1fe058cebf9d1987ce24f0f38f0.bundle",
+            "FileHash": "e52ee1fe058cebf9d1987ce24f0f38f0",
+            "FileCRC": "fb563e8a",
+            "FileSize": 13845,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle",
+                "defaultpackage_assets_assetraw_ui.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png",
+                    "AssetGUID": "5b56d9fa0e8bd6e409ed188db38a692c"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle",
+            "FileName": "34e445d7c7bf7e18c1309f6efd172531.bundle",
+            "FileHash": "34e445d7c7bf7e18c1309f6efd172531",
+            "FileCRC": "89db8c65",
+            "FileSize": 6839,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle",
+                "defaultpackage_assets_assetraw_ui.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/Handles/Handle_Plain.png",
+                    "AssetGUID": "010a6e5305fa7004f89c5d317b7b47d4"
+                }
+            ]
+        }
+    ],
+    "IndependAssets": []
+}

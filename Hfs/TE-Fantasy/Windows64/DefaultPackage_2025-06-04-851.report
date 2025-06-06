@@ -1,0 +1,756 @@
+{
+    "Summary": {
+        "YooVersion": "2.3.8",
+        "UnityVersion": "2021.3.28f1",
+        "BuildDate": "2025/6/4 14:11:57",
+        "BuildSeconds": 7,
+        "BuildTarget": 19,
+        "BuildPipeline": "BuiltinBuildPipeline",
+        "BuildBundleType": 2,
+        "BuildPackageName": "DefaultPackage",
+        "BuildPackageVersion": "2025-06-04-851",
+        "BuildPackageNote": "2025/6/4 14:11:49",
+        "UniqueBundleName": true,
+        "EnableAddressable": true,
+        "LocationToLower": false,
+        "IncludeAssetGUID": false,
+        "AutoCollectShaders": true,
+        "IgnoreRuleName": "YooAsset.Editor.NormalIgnoreRule",
+        "ClearBuildCacheFiles": true,
+        "UseAssetDependencyDB": false,
+        "EnableSharePackRule": true,
+        "SingleReferencedPackAlone": true,
+        "EncryptionClassName": "null",
+        "FileNameStyle": 0,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": true,
+        "WriteLinkXML": true,
+        "CacheServerHost": "",
+        "CacheServerPort": 0,
+        "BuiltinShadersBundleName": "",
+        "MonoScriptsBundleName": "",
+        "AssetFileTotalCount": 32,
+        "MainAssetTotalCount": 30,
+        "AllBundleTotalCount": 11,
+        "AllBundleTotalSize": 3945946,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "Cube",
+            "AssetPath": "Assets/AssetRaw/Actor/Game/Cube.prefab",
+            "AssetGUID": "14515f8505976b04fbdd66ddc61a661c",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_actor_game.bundle",
+            "MainBundleSize": 6324,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png",
+                    "AssetGUID": "5b56d9fa0e8bd6e409ed188db38a692c"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/Handles/Handle_Plain.png",
+                    "AssetGUID": "010a6e5305fa7004f89c5d317b7b47d4"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Variable Joystick.prefab",
+                    "AssetGUID": "ec536a7718376554185e4a856d5ae230"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/cube.mat",
+                    "AssetGUID": "ef66f761ad8fe9f40a0ea0426ec7ba77"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ]
+        },
+        {
+            "Address": "Variable Joystick",
+            "AssetPath": "Assets/AssetRaw/Actor/Game/Variable Joystick.prefab",
+            "AssetGUID": "ec536a7718376554185e4a856d5ae230",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_actor_game.bundle",
+            "MainBundleSize": 6324,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png",
+                    "AssetGUID": "5b56d9fa0e8bd6e409ed188db38a692c"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/Handles/Handle_Plain.png",
+                    "AssetGUID": "010a6e5305fa7004f89c5d317b7b47d4"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ]
+        },
+        {
+            "Address": "about",
+            "AssetPath": "Assets/AssetRaw/Configs/about.txt",
+            "AssetGUID": "ba11f0707eb5f814392cbf12498aba94",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_configs.bundle",
+            "MainBundleSize": 1238,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "item_tbitem",
+            "AssetPath": "Assets/AssetRaw/Configs/bytes/item_tbitem.bytes",
+            "AssetGUID": "e43100abff3365241928b495bf0e5447",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_configs_bytes.bundle",
+            "MainBundleSize": 1681,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "logininfo_tbinfo",
+            "AssetPath": "Assets/AssetRaw/Configs/bytes/logininfo_tbinfo.bytes",
+            "AssetGUID": "a6fbcbd0461dc684999738d09a490933",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_configs_bytes.bundle",
+            "MainBundleSize": 1681,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "ybtest_tb",
+            "AssetPath": "Assets/AssetRaw/Configs/bytes/ybtest_tb.bytes",
+            "AssetGUID": "92a46d60c622d4546a9c004dd6d0fea7",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_configs_bytes.bundle",
+            "MainBundleSize": 1681,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "GameLogic.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/GameLogic.dll.bytes",
+            "AssetGUID": "7fb892396cfde944e85057744fcb4296",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "GameProto.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/GameProto.dll.bytes",
+            "AssetGUID": "a5487586cd26d1346a724613b29dd483",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "mscorlib.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/mscorlib.dll.bytes",
+            "AssetGUID": "fc80c01afa0f57f4f8e0a7d814aca1d1",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "System.Core.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/System.Core.dll.bytes",
+            "AssetGUID": "369b3d85fc39e0d4c916b166f98fcb51",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "System.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/System.dll.bytes",
+            "AssetGUID": "c3e2ab26747aca14e8e82e0767eb68ae",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "TEngine.Runtime.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/TEngine.Runtime.dll.bytes",
+            "AssetGUID": "077b3b7aa4778d744aed75214ab3cdb9",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "UniTask.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/UniTask.dll.bytes",
+            "AssetGUID": "c16149fda4da6a84fbd429166f7235cf",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "YooAsset.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/YooAsset.dll.bytes",
+            "AssetGUID": "9041d7a7e02bd734d889a9c8cd18718d",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "MainBundleSize": 2240538,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "cube",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/cube.mat",
+            "AssetGUID": "ef66f761ad8fe9f40a0ea0426ec7ba77",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "MainBundleSize": 43488,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Skybox",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/Skybox.mat",
+            "AssetGUID": "d69071256986a1c4bb4872d222c6ae6e",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "MainBundleSize": 43488,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Effect",
+            "AssetPath": "Assets/AssetRaw/Scenes/Effect.unity",
+            "AssetGUID": "d7949e9b21603ee4487b28b4a02e84c2",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_scenes.bundle",
+            "MainBundleSize": 101411,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Game",
+            "AssetPath": "Assets/AssetRaw/Scenes/Game.unity",
+            "AssetGUID": "0491a35e0113f244ca4df05d03645ab2",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_scenes.bundle",
+            "MainBundleSize": 101411,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png",
+                    "AssetGUID": "5b56d9fa0e8bd6e409ed188db38a692c"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/Handles/Handle_Plain.png",
+                    "AssetGUID": "010a6e5305fa7004f89c5d317b7b47d4"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Cube.prefab",
+                    "AssetGUID": "14515f8505976b04fbdd66ddc61a661c"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Variable Joystick.prefab",
+                    "AssetGUID": "ec536a7718376554185e4a856d5ae230"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/cube.mat",
+                    "AssetGUID": "ef66f761ad8fe9f40a0ea0426ec7ba77"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ]
+        },
+        {
+            "Address": "BattleMainUI",
+            "AssetPath": "Assets/AssetRaw/UI/BattleMainUI.prefab",
+            "AssetGUID": "75322b53b8e01174ba40e4279cf24614",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "MainBundleSize": 22030,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_bg.png",
+                    "AssetGUID": "f43899c31dd434901b0422f98bcde88b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_handle.png",
+                    "AssetGUID": "01ccaea9b49214edda39f03f648b5b8b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Blue.png",
+                    "AssetGUID": "1f44cb90b6ae648c783dac573bfe9cd0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Red.png",
+                    "AssetGUID": "bfad0e64f8ef1491c8def7e679187b89"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Yellow.png",
+                    "AssetGUID": "af67f6c46933441daaa64d6880890586"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Frame.png",
+                    "AssetGUID": "c95935206d18f42399e9881ce6bdf61c"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/zd_img_light.png",
+                    "AssetGUID": "a43cb397a444ce44f9becc183ced96ed"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle"
+            ]
+        },
+        {
+            "Address": "HsTestUI",
+            "AssetPath": "Assets/AssetRaw/UI/HsTestUI.prefab",
+            "AssetGUID": "082b0263138a031469f1d5e7b796837a",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "MainBundleSize": 22030,
+            "DependAssets": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png",
+                    "AssetGUID": "5b56d9fa0e8bd6e409ed188db38a692c"
+                },
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/Handles/Handle_Plain.png",
+                    "AssetGUID": "010a6e5305fa7004f89c5d317b7b47d4"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Variable Joystick.prefab",
+                    "AssetGUID": "ec536a7718376554185e4a856d5ae230"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/zd_img_light.png",
+                    "AssetGUID": "a43cb397a444ce44f9becc183ced96ed"
+                }
+            ],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ]
+        },
+        {
+            "Address": "LoginUI",
+            "AssetPath": "Assets/AssetRaw/UI/LoginUI.prefab",
+            "AssetGUID": "3f4849d649e5a9647acda84aea936e20",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "MainBundleSize": 22030,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "TestUI",
+            "AssetPath": "Assets/AssetRaw/UI/TestUI.prefab",
+            "AssetGUID": "9b969a6a722855c47be887dacd539056",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "MainBundleSize": 22030,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "FS002_Night_Moonless",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Common/FS002_Night_Moonless.png",
+            "AssetGUID": "13ec4f589b2340646969832fc2e68ec6",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
+            "MainBundleSize": 1478280,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Play_Joystick_bg",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_bg.png",
+            "AssetGUID": "f43899c31dd434901b0422f98bcde88b",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 30669,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Play_Joystick_handle",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_handle.png",
+            "AssetGUID": "01ccaea9b49214edda39f03f648b5b8b",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 30669,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Slider11_Fill_Blue",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Blue.png",
+            "AssetGUID": "1f44cb90b6ae648c783dac573bfe9cd0",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 30669,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Slider11_Fill_Red",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Red.png",
+            "AssetGUID": "bfad0e64f8ef1491c8def7e679187b89",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 30669,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Slider11_Fill_Yellow",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Yellow.png",
+            "AssetGUID": "af67f6c46933441daaa64d6880890586",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 30669,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "Slider11_Frame",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Frame.png",
+            "AssetGUID": "c95935206d18f42399e9881ce6bdf61c",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 30669,
+            "DependAssets": [],
+            "DependBundles": []
+        },
+        {
+            "Address": "zd_img_light",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/zd_img_light.png",
+            "AssetGUID": "a43cb397a444ce44f9becc183ced96ed",
+            "AssetTags": [],
+            "MainBundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "MainBundleSize": 30669,
+            "DependAssets": [],
+            "DependBundles": []
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "defaultpackage_assets_assetraw_actor_game.bundle",
+            "FileName": "88be519e359915490d68ec8fc70ecf3b.bundle",
+            "FileHash": "88be519e359915490d68ec8fc70ecf3b",
+            "FileCRC": "b604ac73",
+            "FileSize": 6324,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Cube.prefab",
+                    "AssetGUID": "14515f8505976b04fbdd66ddc61a661c"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Actor/Game/Variable Joystick.prefab",
+                    "AssetGUID": "ec536a7718376554185e4a856d5ae230"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_configs.bundle",
+            "FileName": "c33d4d3ab057401eb70b27a4b6fc3e25.bundle",
+            "FileHash": "c33d4d3ab057401eb70b27a4b6fc3e25",
+            "FileCRC": "a82bb7f9",
+            "FileSize": 1238,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Configs/about.txt",
+                    "AssetGUID": "ba11f0707eb5f814392cbf12498aba94"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_configs_bytes.bundle",
+            "FileName": "bcb92e89bee6bca82d73f0a13988195e.bundle",
+            "FileHash": "bcb92e89bee6bca82d73f0a13988195e",
+            "FileCRC": "9717517c",
+            "FileSize": 1681,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Configs/bytes/item_tbitem.bytes",
+                    "AssetGUID": "e43100abff3365241928b495bf0e5447"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Configs/bytes/logininfo_tbinfo.bytes",
+                    "AssetGUID": "a6fbcbd0461dc684999738d09a490933"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Configs/bytes/ybtest_tb.bytes",
+                    "AssetGUID": "92a46d60c622d4546a9c004dd6d0fea7"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "FileName": "781319c96f4ba1e9a6b4444b132ec453.bundle",
+            "FileHash": "781319c96f4ba1e9a6b4444b132ec453",
+            "FileCRC": "aeaf9a6e",
+            "FileSize": 2240538,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/GameLogic.dll.bytes",
+                    "AssetGUID": "7fb892396cfde944e85057744fcb4296"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/GameProto.dll.bytes",
+                    "AssetGUID": "a5487586cd26d1346a724613b29dd483"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/mscorlib.dll.bytes",
+                    "AssetGUID": "fc80c01afa0f57f4f8e0a7d814aca1d1"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/System.Core.dll.bytes",
+                    "AssetGUID": "369b3d85fc39e0d4c916b166f98fcb51"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/System.dll.bytes",
+                    "AssetGUID": "c3e2ab26747aca14e8e82e0767eb68ae"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/TEngine.Runtime.dll.bytes",
+                    "AssetGUID": "077b3b7aa4778d744aed75214ab3cdb9"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/UniTask.dll.bytes",
+                    "AssetGUID": "c16149fda4da6a84fbd429166f7235cf"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/DLL/YooAsset.dll.bytes",
+                    "AssetGUID": "9041d7a7e02bd734d889a9c8cd18718d"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "FileName": "a3ed8128b4a179e6f15fb31775acf9ef.bundle",
+            "FileHash": "a3ed8128b4a179e6f15fb31775acf9ef",
+            "FileCRC": "699f4e31",
+            "FileSize": 43488,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/cube.mat",
+                    "AssetGUID": "ef66f761ad8fe9f40a0ea0426ec7ba77"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Materials/Material/Skybox.mat",
+                    "AssetGUID": "d69071256986a1c4bb4872d222c6ae6e"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_scenes.bundle",
+            "FileName": "c4045a7eb85348d904b768f66dec70a4.bundle",
+            "FileHash": "c4045a7eb85348d904b768f66dec70a4",
+            "FileCRC": "926adb7f",
+            "FileSize": 101411,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_materials_material.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/Scenes/Effect.unity",
+                    "AssetGUID": "d7949e9b21603ee4487b28b4a02e84c2"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/Scenes/Game.unity",
+                    "AssetGUID": "0491a35e0113f244ca4df05d03645ab2"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "FileName": "4aa3e42cdb466b351073878206951411.bundle",
+            "FileHash": "4aa3e42cdb466b351073878206951411",
+            "FileCRC": "9ecca458",
+            "FileSize": 22030,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [
+                "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+                "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle"
+            ],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/UI/BattleMainUI.prefab",
+                    "AssetGUID": "75322b53b8e01174ba40e4279cf24614"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UI/HsTestUI.prefab",
+                    "AssetGUID": "082b0263138a031469f1d5e7b796837a"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UI/LoginUI.prefab",
+                    "AssetGUID": "3f4849d649e5a9647acda84aea936e20"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UI/TestUI.prefab",
+                    "AssetGUID": "9b969a6a722855c47be887dacd539056"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
+            "FileName": "805a2ae3c558dea74811ed7e010ef56b.bundle",
+            "FileHash": "805a2ae3c558dea74811ed7e010ef56b",
+            "FileCRC": "9e7f22b4",
+            "FileSize": 1478280,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Common/FS002_Night_Moonless.png",
+                    "AssetGUID": "13ec4f589b2340646969832fc2e68ec6"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "FileName": "c7a095e8ad01d21ce103d8c8c39b16ac.bundle",
+            "FileHash": "c7a095e8ad01d21ce103d8c8c39b16ac",
+            "FileCRC": "61001425",
+            "FileSize": 30669,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_ui.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_bg.png",
+                    "AssetGUID": "f43899c31dd434901b0422f98bcde88b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_handle.png",
+                    "AssetGUID": "01ccaea9b49214edda39f03f648b5b8b"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Blue.png",
+                    "AssetGUID": "1f44cb90b6ae648c783dac573bfe9cd0"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Red.png",
+                    "AssetGUID": "bfad0e64f8ef1491c8def7e679187b89"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Yellow.png",
+                    "AssetGUID": "af67f6c46933441daaa64d6880890586"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Frame.png",
+                    "AssetGUID": "c95935206d18f42399e9881ce6bdf61c"
+                },
+                {
+                    "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/zd_img_light.png",
+                    "AssetGUID": "a43cb397a444ce44f9becc183ced96ed"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+            "FileName": "f86851a0fd328210e8fb0039412ed957.bundle",
+            "FileHash": "f86851a0fd328210e8fb0039412ed957",
+            "FileCRC": "40c7adc5",
+            "FileSize": 12544,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle",
+                "defaultpackage_assets_assetraw_ui.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png",
+                    "AssetGUID": "5b56d9fa0e8bd6e409ed188db38a692c"
+                }
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle",
+            "FileName": "50807bb37817711732dda262ba70abad.bundle",
+            "FileHash": "50807bb37817711732dda262ba70abad",
+            "FileCRC": "063ffab0",
+            "FileSize": 7743,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [
+                "defaultpackage_assets_assetraw_actor_game.bundle",
+                "defaultpackage_assets_assetraw_scenes.bundle",
+                "defaultpackage_assets_assetraw_ui.bundle"
+            ],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/AddRes/Joystick Pack/Sprites/Handles/Handle_Plain.png",
+                    "AssetGUID": "010a6e5305fa7004f89c5d317b7b47d4"
+                }
+            ]
+        }
+    ],
+    "IndependAssets": []
+}
