@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using StackExchange.Redis;
@@ -59,6 +60,65 @@ namespace RedisServer
         /// <param name="result"></param>
         private void AcceptClient(IAsyncResult result)
         {
+            try
+            {
+                Socket clientSocket = _serverSocket.EndAccept(result);
+                AddText("已连接: " + clientSocket.RemoteEndPoint);
+                
+                _serverSocket.BeginAccept(AcceptClient, _serverSocket);
+                while (true)
+                {
+                    byte[] buffer = new byte[1024];
+                    int bytesRead =clientSocket.Receive(buffer);
+                    if (bytesRead == 0)
+                    {
+                        AddText("客户端已断开连接");
+                        clientSocket.Close();
+                        return;
+                    }
+                    string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                    AddText("客户端消息: " + message);
+                    LoginInfo loginInfo = JsonConvert.DeserializeObject<LoginInfo>(message);
+                    if (loginInfo.PackId == 1)
+                    {
+                        AddText("客户端登入请求！");
+                        if (SearchRedisData(loginInfo))
+                        {
+                            Response response = new Response()
+                            {
+                                PackId = 1,
+                                Result = 1,
+                                Description = "登入成功",
+                                UserName = loginInfo.UserName,
+                                Password = loginInfo.Password
+                            };
+                            AddText("发送消息: " + JsonConvert.SerializeObject(response));
+                            clientSocket.Send(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(response)));
+                            AddText("已发送消息");
+                        }
+                        else
+                        {
+                            Response response = new Response
+                            {
+                                PackId = loginInfo.PackId,
+                                Result = -1,
+                                Description = "用户名或密码错误",
+                            };
+                            AddText("发送消息: " + JsonConvert.SerializeObject(response));
+                            clientSocket.Send(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(response)));
+                            AddText("已发送消息");
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                AddText("服务器异常: " + e.Message);
+            }
+        }
+
+        private void SendMessage()
+        {
             
         }
         
@@ -108,57 +168,68 @@ namespace RedisServer
         /// 搜索 Redis 数据
         /// </summary>
         /// <param name="key"></param>
-        private void SearchRedisData(string key)
+        private bool SearchRedisData(LoginInfo loginInfo)
         {
             if (_redisDatabase == null)
             {
                 AddText("请先连接 Redis");
-                return;
+                return false;
             }
             try
             {
-                RedisType type = _redisDatabase.KeyType(key);
-                switch (type)
+                if (_redisDatabase.KeyExists(loginInfo.UserName))
                 {
-                    case RedisType.String:
-                        string value = _redisDatabase.StringGet(key);
-                        AddText($"[String] {key} = {value}");
-                        break;
-                    case RedisType.Hash:
-                        var hash=_redisDatabase.HashGetAll(key);
-                        foreach (var item in hash)
-                        {
-                            AddText($"[Hash]{key} {item.Name} = {item.Value}");
-                        }
-                        break;
-                    case RedisType.List:
-                        var list = _redisDatabase.ListRange(key);
-                        foreach (var item in list)
-                        {
-                            AddText($"[List]{key} {item}");
-                        }
-                        break;
-                    case RedisType.Set:
-                        var set = _redisDatabase.SetMembers(key);
-                        foreach (var item in set)
-                        {
-                            AddText($"[Set]{key} {item}");
-                        }
-                        break;
-                    case RedisType.SortedSet:
-                        var sortedSet = _redisDatabase.SortedSetRangeByRank(key);
-                        for (int i = 0; i < sortedSet.Length; i++)
-                        {
-                            AddText($"[SortedSet] {key}[{i}] = {sortedSet[i]} | Score: {sortedSet[i]}");
-                        }
-                        break;
+                    RedisType type = _redisDatabase.KeyType(loginInfo.UserName);
+                    switch (type)
+                    {
+                        case RedisType.String:
+                            string value = _redisDatabase.StringGet(loginInfo.UserName);
+                            AddText($"[String] {loginInfo.UserName} = {value}");
+                            return loginInfo.Password == value;
+                            break;
+                        case RedisType.Hash:
+                            var hash=_redisDatabase.HashGetAll(loginInfo.UserName);
+                            foreach (var item in hash)
+                            {
+                                AddText($"[Hash]{loginInfo.UserName} {item.Name} = {item.Value}");
+                            }
+                            break;
+                        case RedisType.List:
+                            var list = _redisDatabase.ListRange(loginInfo.UserName);
+                            foreach (var item in list)
+                            {
+                                AddText($"[List]{loginInfo.UserName} {item}");
+                            }
+                            break;
+                        case RedisType.Set:
+                            var set = _redisDatabase.SetMembers(loginInfo.UserName);
+                            foreach (var item in set)
+                            {
+                                AddText($"[Set]{loginInfo.UserName} {item}");
+                            }
+                            break;
+                        case RedisType.SortedSet:
+                            var sortedSet = _redisDatabase.SortedSetRangeByRank(loginInfo.UserName);
+                            for (int i = 0; i < sortedSet.Length; i++)
+                            {
+                                AddText($"[SortedSet] {loginInfo.UserName}[{i}] = {sortedSet[i]} | Score: {sortedSet[i]}");
+                            }
+                            break;
+                    }
+                    return false;
                 }
+                else
+                {
+                    AddText($"[Redis] {loginInfo.UserName} 不存在");
+                    return false;
+                }
+               
             }
             catch (Exception e)
             {
                 AddText("Redis 查询失败: " + e.Message);
             }
-            
+            return false;
         }
 
         /// <summary>
@@ -485,7 +556,7 @@ namespace RedisServer
         private void selectdb_Click(object sender, EventArgs e)
         {
             //RedisType已有类型 string hash set sortedset(zset) list
-            SearchRedisData(searsh1.Text);
+            // SearchRedisData(searsh1.Text);
             
             //HyperLogLog类型
             // SearchRedisHylogData(searsh1.Text);

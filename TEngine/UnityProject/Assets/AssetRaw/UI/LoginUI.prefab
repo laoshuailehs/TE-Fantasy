@@ -1361,6 +1361,8 @@ MonoBehaviour:
   _btnRegistration: {fileID: 7824348378448766553}
   _btnUpdate: {fileID: 4502138433865742288}
   _textLogin: {fileID: 1618642761774137108}
+  serverIp: 127.0.0.1
+  port: 8019
 --- !u!1 &7590624233362660643
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,7 +26,7 @@ namespace GameLogic
         private void OnClickCreatorKitBtn()
         {
             this.Close();
-            GameModule.Scene.LoadSceneAsync("AllSlime");
+            GameModule.Scene.LoadSceneAsync("Game");
         }
         private void OnClickGameBtn()
         {

@@ -38,3 +38,5 @@ E:\HS\h1\te-fantasy\main\GameLoginServer\RedisServer\RedisServer\RedisServer\obj
 E:\HS\h1\te-fantasy\main\GameLoginServer\RedisServer\RedisServer\RedisServer\obj\Debug\RedisServer.exe
 E:\HS\h1\te-fantasy\main\GameLoginServer\RedisServer\RedisServer\RedisServer\obj\Debug\RedisServer.pdb
 E:\HS\h1\te-fantasy\main\GameLoginServer\RedisServer\RedisServer\RedisServer\bin\Debug\RedisServer.pdb
+E:\HS\h1\te-fantasy\main\GameLoginServer\RedisServer\RedisServer\RedisServer\bin\Debug\Newtonsoft.Json.dll
+E:\HS\h1\te-fantasy\main\GameLoginServer\RedisServer\RedisServer\RedisServer\bin\Debug\Newtonsoft.Json.xml
