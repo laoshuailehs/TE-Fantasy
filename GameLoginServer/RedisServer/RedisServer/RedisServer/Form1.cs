@@ -79,36 +79,7 @@ namespace RedisServer
                     string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
                     AddText("客户端消息: " + message);
                     LoginInfo loginInfo = JsonConvert.DeserializeObject<LoginInfo>(message);
-                    if (loginInfo.PackId == 1)
-                    {
-                        AddText("客户端登入请求！");
-                        if (SearchRedisData(loginInfo))
-                        {
-                            Response response = new Response()
-                            {
-                                PackId = 1,
-                                Result = 1,
-                                Description = "登入成功",
-                                UserName = loginInfo.UserName,
-                                Password = loginInfo.Password
-                            };
-                            AddText("发送消息: " + JsonConvert.SerializeObject(response));
-                            clientSocket.Send(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(response)));
-                            AddText("已发送消息");
-                        }
-                        else
-                        {
-                            Response response = new Response
-                            {
-                                PackId = loginInfo.PackId,
-                                Result = -1,
-                                Description = "用户名或密码错误",
-                            };
-                            AddText("发送消息: " + JsonConvert.SerializeObject(response));
-                            clientSocket.Send(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(response)));
-                            AddText("已发送消息");
-                        }
-                    }
+                    CheckLoginType(loginInfo, clientSocket);
                 }
             }
             catch (Exception e)
@@ -117,9 +88,47 @@ namespace RedisServer
             }
         }
 
-        private void SendMessage()
+        private void CheckLoginType(LoginInfo loginInfo , Socket clientSocket)
         {
-            
+            switch (loginInfo.PackId)
+            {
+                case 1:AddText("客户端登入请求！");
+                    if (SearchRedisData(loginInfo))
+                    {
+                        var response =  MessageManage.Instance.LoginSuccess(clientSocket, loginInfo);
+                        AddText("发送消息: " + JsonConvert.SerializeObject(response));
+                    }
+                    else
+                    {
+                        var response = MessageManage.Instance.LoginFail(clientSocket, loginInfo);
+                        AddText("发送消息: " + JsonConvert.SerializeObject(response));
+                    }
+                    break;
+                case 2: AddText("客户端注册请求！");
+                    if (InsertRedisData(loginInfo))
+                    {
+                        var response = MessageManage.Instance.RegisterSuccess(clientSocket, loginInfo);
+                        AddText("发送消息: " + JsonConvert.SerializeObject(response));
+                    }
+                    else
+                    {
+                        var response = MessageManage.Instance.RegisterFail(clientSocket, loginInfo);
+                        AddText("发送消息: " + JsonConvert.SerializeObject(response));
+                    }
+                    break;
+                case 3: AddText("客户端修改密码请求！");
+                    if (ModifyRedisData(loginInfo))
+                    {
+                        var response = MessageManage.Instance.ModifySuccess(clientSocket, loginInfo);
+                        AddText("发送消息: " + JsonConvert.SerializeObject(response));
+                    }
+                    else
+                    {
+                        var response = MessageManage.Instance.ModifyFail(clientSocket, loginInfo);
+                        AddText("发送消息: " + JsonConvert.SerializeObject(response));
+                    }
+                    break;
+            }
         }
         
         #endregion
@@ -230,6 +239,44 @@ namespace RedisServer
                 AddText("Redis 查询失败: " + e.Message);
             }
             return false;
+        }
+
+        /// <summary>
+        /// 添加Redis数据
+        /// </summary>
+        /// <param name="loginInfo"></param>
+        private bool InsertRedisData(LoginInfo loginInfo)
+        {
+            
+            if (_redisDatabase.KeyExists(loginInfo.UserName))
+            {
+                AddText("Redis 数据已存在");
+                return false;
+            }
+            else
+            {
+                _redisDatabase.StringSet(loginInfo.UserName, loginInfo.Password);
+                AddText("Redis 数据添加成功");
+                return true;
+            }
+        }
+
+        /// <summary>
+        /// 修改Redis数据
+        /// </summary>
+        private bool ModifyRedisData(LoginInfo loginInfo)
+        {
+            if (_redisDatabase.KeyExists(loginInfo.UserName))
+            {
+                _redisDatabase.StringSet(loginInfo.UserName, loginInfo.Password);
+                AddText("Redis 数据修改成功");
+                return true;
+            }
+            else
+            {
+                AddText("Redis 数据不存在");
+                return false;
+            }
         }
 
         /// <summary>
