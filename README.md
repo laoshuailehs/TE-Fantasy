@@ -1,5 +1,6 @@
 # TE-Fantasy
 基于TEngine框架 游戏开发
+
 # 说明目录 
 [URL在线转换](https://www.toolhelper.cn/EncodeDecode/Url?type=1)
 [大小写转换](https://app.xunjiepdf.com/yinwen)
@@ -469,3 +470,11 @@ redis-server.exe --service-install redis.windows.conf --loglevel verbose
 #运行redis服务
 redis-server --service-start
 ```
+
+## [RabbitMQ](https://blog.csdn.net/qq_45173404/article/details/121687489)
+http://localhost:15672/
+
+## Unity Shader
+1. 游戏中模型显示粉色的情况你一定碰到过吧，是Shader丢失呢，还是Shader不符合当前平台呢，又或者是Shader上有语法的错误呢？如果我们有了解并学会Shader的话，这些问题就不会再是一脸懵逼啦。
+2. 內建Unity Shader仅仅只是“通用”用例，不足以满足我们所有的画面表现需求。一旦掌握Shader，可以为游戏/应用创造独一无二的视觉享受。根据实际需求，为游戏和应用实现特定功能的Shader。
+3. 能大大的帮助我们做渲染上的性能优化，因为通过Shader可以控制渲染什么以及如何渲染。

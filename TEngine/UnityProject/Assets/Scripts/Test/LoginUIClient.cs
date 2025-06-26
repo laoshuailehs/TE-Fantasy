@@ -17,6 +17,8 @@ public class LoginUIClient : MonoBehaviour
     [SerializeField]
     private InputField _inputAccount;
     [SerializeField]
+    private InputField _inputIpConfig;
+    [SerializeField]
     private InputField _inputPassword;
     [SerializeField]
     private Button _btnLogin;
@@ -27,7 +29,7 @@ public class LoginUIClient : MonoBehaviour
     [SerializeField]
     private Text _textLogin;
     private bool canLogin;
-    public string serverIp = "127.0.0.1"; // 服务器 IP 地址
+    public string serverIp = "192.168.0.127"; // 服务器 IP 地址
     public int port = 8019;             // 服务器监听端口
     private TcpClient _client = null;
     private NetworkStream _stream = null;
@@ -39,6 +41,7 @@ public class LoginUIClient : MonoBehaviour
         _btnLogin.onClick.AddListener(OnClickLoginBtn);
         _btnRegistration.onClick.AddListener(OnClickRegistration);
         _btnUpdate.onClick.AddListener(OnClickUpdateBtn);
+        _inputIpConfig.text = serverIp;
     }
 
     private void OnClickRegistration()
@@ -84,7 +87,7 @@ public class LoginUIClient : MonoBehaviour
             }
 
             _client = new TcpClient();
-            _client.Connect(serverIp, port);
+            _client.Connect(_inputIpConfig.text, port);
             _stream = _client.GetStream();
             isConnected = true;
             cts = new CancellationTokenSource();
