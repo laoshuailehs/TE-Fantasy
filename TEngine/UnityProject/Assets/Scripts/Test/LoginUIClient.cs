@@ -52,9 +52,9 @@ public class LoginUIClient : MonoBehaviour
     
     private void OnClickLoginBtn()
     {
-        // _textLogin.gameObject.SetActive(true);
-        ConnectServer();
-        SendLoginMessage();
+        _textLogin.gameObject.SetActive(true);
+        // ConnectServer();
+        // SendLoginMessage();
     }
 
     private void OnClickUpdateBtn()

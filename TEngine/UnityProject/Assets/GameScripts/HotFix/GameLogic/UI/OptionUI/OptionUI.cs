@@ -26,7 +26,7 @@ namespace GameLogic
         private void OnClickCreatorKitBtn()
         {
             this.Close();
-            GameModule.Scene.LoadSceneAsync("Game");
+            GameModule.Scene.LoadSceneAsync("Shader");
         }
         private void OnClickGameBtn()
         {
