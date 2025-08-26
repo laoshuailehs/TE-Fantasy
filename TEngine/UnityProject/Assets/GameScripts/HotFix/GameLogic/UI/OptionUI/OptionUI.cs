@@ -26,18 +26,20 @@ namespace GameLogic
         private void OnClickCreatorKitBtn()
         {
             this.Close();
-            GameModule.Scene.LoadSceneAsync("Shader");
+            GameModule.Scene.LoadScene("Shader");
+            GameModule.UI.ShowUI<HsTestUI>();
         }
         private void OnClickGameBtn()
         {
             this.Close();
-            GameModule.Scene.LoadSceneAsync("Game");
-            GameModule.UI.ShowUIAsync<HsTestUI>();
+            GameModule.Scene.LoadScene("Game");
+            GameModule.UI.ShowUI<HsTestUI>();
         }
         private void OnClickEffectBtn()
         {
             this.Close();
-            GameModule.Scene.LoadSceneAsync("Effect");
+            GameModule.Scene.LoadScene("Effect");
+            GameModule.UI.ShowUI<HsTestUI>();
         }
         #endregion
 

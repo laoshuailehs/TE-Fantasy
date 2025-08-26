@@ -1,0 +1,118 @@
+ManifestFileVersion: 0
+CRC: 3856332457
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: defaultpackage_assets_assetraw_actor_game.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_assets_assetraw_materials_material.bundle
+        Dependency_1: defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle
+        Dependency_2: defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle
+    Info_1:
+      Name: defaultpackage_assets_assetraw_configs.bundle
+      Dependencies: {}
+    Info_2:
+      Name: defaultpackage_assets_assetraw_configs_bytes.bundle
+      Dependencies: {}
+    Info_3:
+      Name: defaultpackage_assets_assetraw_dll.bundle
+      Dependencies: {}
+    Info_4:
+      Name: defaultpackage_assets_assetraw_materials_material.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_assets_assetraw_uiraw_atlas_light.bundle
+        Dependency_1: defaultpackage_unityshaders.bundle
+    Info_5:
+      Name: defaultpackage_assets_assetraw_materials_materials.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_unityshaders.bundle
+    Info_6:
+      Name: defaultpackage_assets_assetraw_scenes.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_assets_assetraw_actor_game.bundle
+        Dependency_1: defaultpackage_assets_assetraw_materials_material.bundle
+        Dependency_2: defaultpackage_assets_assetraw_materials_materials.bundle
+        Dependency_3: defaultpackage_unityshaders.bundle
+        Dependency_4: defaultpackage_share_assets_prefabs.bundle
+    Info_7:
+      Name: defaultpackage_assets_assetraw_ui.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle
+        Dependency_1: defaultpackage_assets_assetraw_uiraw_atlas_normal_ui_set_a.bundle
+        Dependency_2: defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle
+        Dependency_3: defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle
+    Info_8:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle
+      Dependencies: {}
+    Info_9:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_common.bundle
+      Dependencies: {}
+    Info_10:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle
+      Dependencies: {}
+    Info_11:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_armor.bundle
+      Dependencies: {}
+    Info_12:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_arrow.bundle
+      Dependencies: {}
+    Info_13:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_boots.bundle
+      Dependencies: {}
+    Info_14:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_bow.bundle
+      Dependencies: {}
+    Info_15:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_gloves.bundle
+      Dependencies: {}
+    Info_16:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_helmet.bundle
+      Dependencies: {}
+    Info_17:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_meleeweapon1h.bundle
+      Dependencies: {}
+    Info_18:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_meleeweapon2h.bundle
+      Dependencies: {}
+    Info_19:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_other_misc.bundle
+      Dependencies: {}
+    Info_20:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_other_ring.bundle
+      Dependencies: {}
+    Info_21:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_icons_shield.bundle
+      Dependencies: {}
+    Info_22:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_itembackgrounds.bundle
+      Dependencies: {}
+    Info_23:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_light.bundle
+      Dependencies: {}
+    Info_24:
+      Name: defaultpackage_assets_assetraw_uiraw_atlas_normal_ui_set_a.bundle
+      Dependencies: {}
+    Info_25:
+      Name: defaultpackage_assets_assetraw_animations.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_assets_assetraw_animations_default.bundle
+        Dependency_1: defaultpackage_assets_assetraw_animations_eventanimation.bundle
+    Info_26:
+      Name: defaultpackage_assets_assetraw_animations_default.bundle
+      Dependencies: {}
+    Info_27:
+      Name: defaultpackage_assets_assetraw_animations_eventanimation.bundle
+      Dependencies: {}
+    Info_28:
+      Name: defaultpackage_unityshaders.bundle
+      Dependencies: {}
+    Info_29:
+      Name: defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle
+      Dependencies: {}
+    Info_30:
+      Name: defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle
+      Dependencies: {}
+    Info_31:
+      Name: defaultpackage_share_assets_prefabs.bundle
+      Dependencies:
+        Dependency_0: defaultpackage_assets_assetraw_materials_material.bundle

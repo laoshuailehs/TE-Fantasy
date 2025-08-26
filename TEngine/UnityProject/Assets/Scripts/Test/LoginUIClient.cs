@@ -53,6 +53,7 @@ public class LoginUIClient : MonoBehaviour
     private void OnClickLoginBtn()
     {
         _textLogin.gameObject.SetActive(true);
+        _textLogin.text = "登录成功";
         // ConnectServer();
         // SendLoginMessage();
     }
@@ -254,10 +255,12 @@ public class LoginUIClient : MonoBehaviour
                     if (response.Result == 1)
                     {
                         _textLogin.gameObject.SetActive(true);
+                        ChangeText("登入成功",cts.Token).Forget();
                         Log.Info("登入成功！");
                     }
                     else
                     {
+                        ChangeText($"{response.Description},登录失败",cts.Token).Forget();
                         Log.Info($"{response.Description},登录失败");
                     }
                 }break;
@@ -265,10 +268,12 @@ public class LoginUIClient : MonoBehaviour
                 {
                     if (response.Result == 1)
                     {
+                        ChangeText("注册成功！",cts.Token).Forget();
                         Log.Info("注册成功！");
                     }
                     else
                     {
+                        ChangeText($"{response.Description},注册失败",cts.Token).Forget();
                         Log.Info($"{response.Description},注册失败");
                     }
                 }break;
@@ -276,10 +281,12 @@ public class LoginUIClient : MonoBehaviour
                 {
                     if (response.Result == 1)
                     {
+                        ChangeText("更新成功",cts.Token).Forget();
                         Log.Info("更新成功！");
                     }
                     else
                     {
+                        ChangeText($"{response.Description},更新失败",cts.Token).Forget();
                         Log.Info($"{response.Description},更新失败");
                     }
                 }break;
@@ -317,7 +324,21 @@ public class LoginUIClient : MonoBehaviour
             Log.Info("当前未连接到服务器！");
         }
     }
-    
+
+    private async UniTask ChangeText(string message,CancellationToken  token)
+    {
+        _textLogin.text = message;
+        await UniTask.Delay(TimeSpan.FromSeconds(1), cancellationToken: token);
+        _textLogin.gameObject.SetActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        cts?.Cancel();
+        cts?.Dispose();
+        cts = null;
+    }
+
     public class LoginInfo
     {
         public int PackId;

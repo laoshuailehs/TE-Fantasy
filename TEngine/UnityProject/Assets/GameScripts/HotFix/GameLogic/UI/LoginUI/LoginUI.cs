@@ -8,8 +8,12 @@
 // using MongoDB.Bson;
 // using MongoDB.Driver;
 // using UnityEngine;
+
+using System.Threading;
+using Cysharp.Threading.Tasks;
 using UnityEngine.UI;
 using TEngine;
+using UnityEngine;
 
 namespace GameLogic
 {
@@ -23,6 +27,7 @@ namespace GameLogic
         private Button _btnRegistration;
         private Text _textLogin;
         private bool canLogin;
+        private CancellationTokenSource cts;
         
         // string serverIp = "127.0.0.1"; // 服务器 IP 地址
         // int port = 8017;             // 服务器监听端口
@@ -35,6 +40,7 @@ namespace GameLogic
             _textLogin = FindChildComponent<Text>("m_textLogin");
             _btnLogin.onClick.AddListener(OnClickLoginBtn);
             _btnRegistration.onClick.AddListener(OnClickRegistration);
+            cts= new CancellationTokenSource();
         }
         #endregion
 
@@ -42,15 +48,23 @@ namespace GameLogic
         {
             base.OnUpdate();
             _hasOverrideUpdate = true;
-            if (_textLogin.gameObject.activeSelf)
+            if (_textLogin.gameObject.activeSelf&&_textLogin.text.Contains("登录成功"))
             {
+                LoginSuccess(cts.Token).Forget();
                 // cts?.Cancel();
-                this.Close();
-                // GameModule.Scene.LoadSceneAsync("Effect");
-                GameModule.UI.ShowUIAsync<OptionUI>();
+                // this.Close();
+                // GameModule.Scene.LoadSceneAsync("Empty");
+                // GameModule.UI.ShowUIAsync<OptionUI>();
             }
         }
 
+        async UniTask LoginSuccess(CancellationToken  token)
+        {
+            await UniTask.Delay(1000, cancellationToken: token);
+            this.Close();
+            GameModule.UI.ShowUI<OptionUI>();
+        }
+        
         protected override void OnCreate()
         {
             base.OnCreate();
@@ -403,6 +417,9 @@ namespace GameLogic
         protected override void Close()
         {
             base.Close();
+            cts?.Cancel();
+            cts?.Dispose();
+            cts = null;
             // cts?.Cancel();
             // tcpClient.Close();
             // if (webSocket != null && webSocket.State == WebSocketState.Open)

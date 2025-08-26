@@ -64,8 +64,10 @@ namespace GameLogic
         private void Btn1()
         {
             Log.Debug("Btn1");
-            GameModule.UI.ShowUIAsync<BattleMainUI>();
-            // GameModule.Scene.LoadScene("hs");
+            GameModule.UI.HideUI(typeof(HsTestUI));
+            
+            GameModule.UI.ShowUI<OptionUI>();
+            GameModule.Scene.LoadScene("Empty");
             isHide = false;
         }
 

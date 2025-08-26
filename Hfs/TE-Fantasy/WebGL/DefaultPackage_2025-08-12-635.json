@@ -1,0 +1,1924 @@
+{
+    "FileVersion": "2.3.1",
+    "EnableAddressable": true,
+    "LocationToLower": false,
+    "IncludeAssetGUID": false,
+    "OutputNameStyle": 0,
+    "BuildBundleType": 2,
+    "BuildPipeline": "BuiltinBuildPipeline",
+    "PackageName": "DefaultPackage",
+    "PackageVersion": "2025-08-12-635",
+    "PackageNote": "2025/8/12 10:35:48",
+    "AssetList": [
+        {
+            "Address": "Cube",
+            "AssetPath": "Assets/AssetRaw/Actor/Game/Cube.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependBundleIDs": [
+                7,
+                28,
+                29
+            ]
+        },
+        {
+            "Address": "Player",
+            "AssetPath": "Assets/AssetRaw/Actor/Game/Player.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Variable Joystick",
+            "AssetPath": "Assets/AssetRaw/Actor/Game/Variable Joystick.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependBundleIDs": [
+                28,
+                29
+            ]
+        },
+        {
+            "Address": "AnimatorController_Jamo",
+            "AssetPath": "Assets/AssetRaw/Animations/AnimatorController_Jamo.controller",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": [
+                2
+            ]
+        },
+        {
+            "Address": "a_Idle",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Idle_Battle",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Battle.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Idle_Happy",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Happy.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Idle_Relaxed",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Relaxed.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Idle_Scared",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Idle_Scared.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Running",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Running.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "a_Walking",
+            "AssetPath": "Assets/AssetRaw/Animations/Default/a_Walking.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Rig_Attack",
+            "AssetPath": "Assets/AssetRaw/Animations/EventAnimation/Rig_Attack.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Rig_Damage",
+            "AssetPath": "Assets/AssetRaw/Animations/EventAnimation/Rig_Damage.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Rig_Damage_02",
+            "AssetPath": "Assets/AssetRaw/Animations/EventAnimation/Rig_Damage_02.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Rig_Damage_03",
+            "AssetPath": "Assets/AssetRaw/Animations/EventAnimation/Rig_Damage_03.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Rig_jump",
+            "AssetPath": "Assets/AssetRaw/Animations/EventAnimation/Rig_jump.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Falling To Landing",
+            "AssetPath": "Assets/AssetRaw/Animations/Falling To Landing.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Fist Pump",
+            "AssetPath": "Assets/AssetRaw/Animations/Fist Pump.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Jump",
+            "AssetPath": "Assets/AssetRaw/Animations/Jump.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "PlayerAnimator",
+            "AssetPath": "Assets/AssetRaw/Animations/PlayerAnimator.controller",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": [
+                2
+            ]
+        },
+        {
+            "Address": "Slime",
+            "AssetPath": "Assets/AssetRaw/Animations/Slime.controller",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": [
+                3
+            ]
+        },
+        {
+            "Address": "Slime_Anim",
+            "AssetPath": "Assets/AssetRaw/Animations/Slime_Anim.fbx",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Standing",
+            "AssetPath": "Assets/AssetRaw/Animations/Standing.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Victory Idle",
+            "AssetPath": "Assets/AssetRaw/Animations/Victory Idle.anim",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "about",
+            "AssetPath": "Assets/AssetRaw/Configs/about.txt",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "item_tbitem",
+            "AssetPath": "Assets/AssetRaw/Configs/bytes/item_tbitem.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "logininfo_tbinfo",
+            "AssetPath": "Assets/AssetRaw/Configs/bytes/logininfo_tbinfo.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ybtest_tb",
+            "AssetPath": "Assets/AssetRaw/Configs/bytes/ybtest_tb.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "GameLogic.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/GameLogic.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "GameProto.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/GameProto.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "mscorlib.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/mscorlib.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "System.Core.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/System.Core.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "System.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/System.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TEngine.Runtime.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/TEngine.Runtime.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UniTask.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/UniTask.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "YooAsset.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/YooAsset.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "cube",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/cube.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "particle",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/particle.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": [
+                26
+            ]
+        },
+        {
+            "Address": "Skybox",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/Skybox.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": [
+                31
+            ]
+        },
+        {
+            "Address": "tail",
+            "AssetPath": "Assets/AssetRaw/Materials/Material/tail.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": [
+                26
+            ]
+        },
+        {
+            "Address": "Ground",
+            "AssetPath": "Assets/AssetRaw/Materials/Materials/Ground.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UnlitMaterial",
+            "AssetPath": "Assets/AssetRaw/Materials/Materials/UnlitMaterial.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependBundleIDs": [
+                31
+            ]
+        },
+        {
+            "Address": "Effect",
+            "AssetPath": "Assets/AssetRaw/Scenes/Effect.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": [
+                7,
+                26,
+                30,
+                31
+            ]
+        },
+        {
+            "Address": "Empty",
+            "AssetPath": "Assets/AssetRaw/Scenes/Empty.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Game",
+            "AssetPath": "Assets/AssetRaw/Scenes/Game.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": [
+                0,
+                8,
+                31
+            ]
+        },
+        {
+            "Address": "Shader",
+            "AssetPath": "Assets/AssetRaw/Scenes/Shader.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": [
+                31
+            ]
+        },
+        {
+            "Address": "HsShader1",
+            "AssetPath": "Assets/AssetRaw/Shaders/HsShader1.shader",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "HsShader2",
+            "AssetPath": "Assets/AssetRaw/Shaders/HsShader2.shader",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "NewUnlitShader",
+            "AssetPath": "Assets/AssetRaw/Shaders/NewUnlitShader.shader",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "skybox",
+            "AssetPath": "Assets/AssetRaw/Shaders/skybox.shader",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BattleMainUI",
+            "AssetPath": "Assets/AssetRaw/UI/BattleMainUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                13
+            ]
+        },
+        {
+            "Address": "HsTestUI",
+            "AssetPath": "Assets/AssetRaw/UI/HsTestUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                0,
+                13,
+                27,
+                28,
+                29
+            ]
+        },
+        {
+            "Address": "LoginUI",
+            "AssetPath": "Assets/AssetRaw/UI/LoginUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                27
+            ]
+        },
+        {
+            "Address": "OptionUI",
+            "AssetPath": "Assets/AssetRaw/UI/OptionUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": [
+                27
+            ]
+        },
+        {
+            "Address": "TestUI",
+            "AssetPath": "Assets/AssetRaw/UI/TestUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "mixbot_low_mixamo_edit1_AlbedoTransparency",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/mixbot_low_mixamo_edit1_AlbedoTransparency.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 11,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "t_jammo_black",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_black.psd",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 11,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "t_jammo_blue",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_blue.psd",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 11,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "t_jammo_yellow",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Alternates/t_jammo_yellow.psd",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 11,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "FS002_Night_Moonless",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Common/FS002_Night_Moonless.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 12,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Rat",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Common/Rat.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 12,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Play_Joystick_bg",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_bg.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Play_Joystick_handle",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Play_Joystick_handle.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Slider11_Fill_Blue",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Blue.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Slider11_Fill_Red",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Red.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Slider11_Fill_Yellow",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Fill_Yellow.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Slider11_Frame",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/Slider11_Frame.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "zd_img_light",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Hsart/zd_img_light.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BanditLightArmorA",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Armor/BanditLightArmorA.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 14,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BattleguardArmorA",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Armor/BattleguardArmorA.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 14,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "DarkMountainA",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Armor/DarkMountainA.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 14,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "GreyKnightA",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Armor/GreyKnightA.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 14,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ManticoreArmorA",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Armor/ManticoreArmorA.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 14,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "RoyalTunicA",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Armor/RoyalTunicA.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 14,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ScoutA",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Armor/ScoutA.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 14,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BattleBowJ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Arrow/BattleBowJ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 15,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "HunterBowJ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Arrow/HunterBowJ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 15,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MarauderBowJ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Arrow/MarauderBowJ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 15,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "RedwoodBowJ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Arrow/RedwoodBowJ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 15,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "VikingShortBowJ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Arrow/VikingShortBowJ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 15,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "WyvernHornBowJ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Arrow/WyvernHornBowJ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 15,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BanditLightArmorX",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Boots/BanditLightArmorX.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BattleguardArmorX",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Boots/BattleguardArmorX.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "DarkMountainX",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Boots/DarkMountainX.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "GreyKnightX",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Boots/GreyKnightX.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ManticoreArmorX",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Boots/ManticoreArmorX.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ScoutX",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Boots/ScoutX.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BattleBowZ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Bow/BattleBowZ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 17,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "HunterBowZ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Bow/HunterBowZ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 17,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MarauderBowZ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Bow/MarauderBowZ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 17,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "RedwoodBowZ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Bow/RedwoodBowZ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 17,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "VikingShortBowZ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Bow/VikingShortBowZ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 17,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "WyvernHornBowZ",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Bow/WyvernHornBowZ.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 17,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BanditLightArmorS",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Gloves/BanditLightArmorS.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 18,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BattleguardArmorS",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Gloves/BattleguardArmorS.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 18,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "DarkMountainS",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Gloves/DarkMountainS.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 18,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "GreyKnightS",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Gloves/GreyKnightS.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 18,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ManticoreArmorS",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Gloves/ManticoreArmorS.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 18,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ScoutS",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Gloves/ScoutS.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 18,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BattleguardHelm",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Helmet/BattleguardHelm.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 19,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "DarkMountain",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Helmet/DarkMountain.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 19,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "HawkHelm",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Helmet/HawkHelm.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 19,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "HighKnightHelm",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Helmet/HighKnightHelm.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 19,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "KnightHelm [Paint]",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Helmet/KnightHelm [Paint].png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 19,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ManticoreHelmet",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Helmet/ManticoreHelmet.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 19,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ScoutHelm",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Helmet/ScoutHelm.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 19,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "AssassinDagger [Paint]",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/AssassinDagger [Paint].png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BalancedSword [Paint]",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/BalancedSword [Paint].png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BronzeDagger",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/BronzeDagger.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "FreeFolkAxe",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/FreeFolkAxe.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "HardwoodWand",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/HardwoodWand.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "HunterKnife [Paint]",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/HunterKnife [Paint].png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Katana1 [Paint]",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/Katana1 [Paint].png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ManticoreSword",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/ManticoreSword.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "SandHealerStaff1",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/SandHealerStaff1.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "SharpenedInfantrySword",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/SharpenedInfantrySword.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "SwampWarriorSpear",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/SwampWarriorSpear.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "VikingAxe3",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/VikingAxe3.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "WarHammer",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/WarHammer.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "WaterAdeptWand1",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/WaterAdeptWand1.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "WoodcutterAxe",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/WoodcutterAxe.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "WoodenClub",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon1H/WoodenClub.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "AriostinGreatsword",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/AriostinGreatsword.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BerserkAxe",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/BerserkAxe.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ButcherKnife",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/ButcherKnife.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "DarkSword",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/DarkSword.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "DestroyerAxe",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/DestroyerAxe.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "GateCrusher",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/GateCrusher.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Harpoon",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/Harpoon.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "LongHammer",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/LongHammer.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MountainSword [Paint]",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/MountainSword [Paint].png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "OldPoleaxe",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/OldPoleaxe.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "SteelAxe",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/SteelAxe.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TwoHandedWoodenMace",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/MeleeWeapon2H/TwoHandedWoodenMace.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Apple",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Misc/Apple.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 22,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Cheese",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Misc/Cheese.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 22,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ChickenLeg",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Misc/ChickenLeg.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 22,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Grog",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Misc/Grog.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 22,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "HandBomb",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Misc/HandBomb.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 22,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "SmallPotion",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Misc/SmallPotion.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 22,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "BronzeRing",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Ring/BronzeRing.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 23,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "GoldenRing",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Ring/GoldenRing.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 23,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MagicBronzeRing",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Ring/MagicBronzeRing.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 23,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MagicGoldenRing",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Ring/MagicGoldenRing.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 23,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MagicSilverRing",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Ring/MagicSilverRing.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 23,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "SilverRing",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Other/Ring/SilverRing.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 23,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "GladiatorShield",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Shield/GladiatorShield.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 24,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MilitiamanShield",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Shield/MilitiamanShield.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 24,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "SteelTowerShield",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Shield/SteelTowerShield.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 24,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "WoodenBuckler",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Shield/WoodenBuckler.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 24,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "WoodenShield",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Shield/WoodenShield.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 24,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "WoodenShield2",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Icons/Shield/WoodenShield2.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 24,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Blue",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/ItemBackgrounds/Blue.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 25,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Brown",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/ItemBackgrounds/Brown.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 25,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Green",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/ItemBackgrounds/Green.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 25,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Grey",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/ItemBackgrounds/Grey.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 25,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Purple",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/ItemBackgrounds/Purple.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 25,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Red",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/ItemBackgrounds/Red.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 25,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "01",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Light/01.tga",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 26,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "02",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Light/02.tga",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 26,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Falloff",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Light/Falloff.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 26,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "RimLight",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Light/RimLight.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 26,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "1_normal_ui_set free",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/1_normal_ui_set free.psd",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "1_normal_ui_set-free",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/1_normal_ui_set-free.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Close Button",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/Close Button.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Division line",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/Division line.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Exclamation_Gray",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/Exclamation_Gray.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Exclamation_Red",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/Exclamation_Red.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Exclamation_Yellow",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/Exclamation_Yellow.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "IRONY TITLE  empty",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/IRONY TITLE  empty.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "IRONY TITLE  Large",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/IRONY TITLE  Large.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "notice",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/notice.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TextBTN_Big",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/TextBTN_Big.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TextBTN_Big_Pressed",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/TextBTN_Big_Pressed.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TextBTN_Cancel",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/TextBTN_Cancel.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TextBTN_Cancel_Pressed",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/TextBTN_Cancel_Pressed.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TextBTN_Medium",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/TextBTN_Medium.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TextBTN_Medium_Pressed",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/TextBTN_Medium_Pressed.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TextBTN_New-Start",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/TextBTN_New-Start.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TextBTN_New-Start_Pressed",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/TextBTN_New-Start_Pressed.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI board Large  parchment",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/UI board Large  parchment.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI board Large Set",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/UI board Large Set.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI board Large stone",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/UI board Large stone.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI board Medium  parchment",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/UI board Medium  parchment.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI board Medium Set",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/UI board Medium Set.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI board Medium stone",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/UI board Medium stone.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI board Small  parchment",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/UI board Small  parchment.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI board Small  stone",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/UI board Small  stone.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI board Small Set",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/normal_ui_set A/UI board Small Set.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": []
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "defaultpackage_assets_assetraw_actor_game.bundle",
+            "UnityCRC": 519748506,
+            "FileHash": "66884232203c13f44eda9c4a66d3f7e8",
+            "FileCRC": "ae75863c",
+            "FileSize": 73705,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                7,
+                26,
+                28,
+                29,
+                31
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_animations.bundle",
+            "UnityCRC": 1733421883,
+            "FileHash": "6876d11db195544a1d1906ee0d2d4c07",
+            "FileCRC": "52144a46",
+            "FileSize": 343761,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                2,
+                3
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_animations_default.bundle",
+            "UnityCRC": 1641919070,
+            "FileHash": "cdf6112e9fdd9dd781054811abe4b038",
+            "FileCRC": "691f8bae",
+            "FileSize": 240822,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_animations_eventanimation.bundle",
+            "UnityCRC": 3171964384,
+            "FileHash": "371998d4278e758f0ea3ac5e9c4720f0",
+            "FileCRC": "0bf6d3d2",
+            "FileSize": 17080,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_configs.bundle",
+            "UnityCRC": 134847023,
+            "FileHash": "cfa1abc3b04a418cc231d8242565da79",
+            "FileCRC": "54f612ec",
+            "FileSize": 1237,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_configs_bytes.bundle",
+            "UnityCRC": 3487987388,
+            "FileHash": "d0bd98e19a08a52941daaca99249dd3f",
+            "FileCRC": "9e07b625",
+            "FileSize": 1681,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "UnityCRC": 2774653076,
+            "FileHash": "0ce68e0ee2e28c4044b44c0bc258f9a9",
+            "FileCRC": "a10c1e67",
+            "FileSize": 2179635,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_materials_material.bundle",
+            "UnityCRC": 2080780790,
+            "FileHash": "133634dec439d0069ad7c8b7db4ba5d1",
+            "FileCRC": "4ae8c838",
+            "FileSize": 194968,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                26,
+                31
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_materials_materials.bundle",
+            "UnityCRC": 1448903821,
+            "FileHash": "a07167b548b61ac7167b12c824a6bec8",
+            "FileCRC": "71bd49e5",
+            "FileSize": 101020,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                31
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_scenes.bundle",
+            "UnityCRC": 1989292047,
+            "FileHash": "5ca455df1a90172a3b28ce7e29ec6a71",
+            "FileCRC": "3c10c65d",
+            "FileSize": 116901,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                0,
+                7,
+                8,
+                26,
+                28,
+                29,
+                30,
+                31
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui.bundle",
+            "UnityCRC": 2480247955,
+            "FileHash": "3a9618c666003cc8c826dd5a9bbcaf24",
+            "FileCRC": "704bcf0f",
+            "FileSize": 22772,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                13,
+                27,
+                28,
+                29
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_alternates.bundle",
+            "UnityCRC": 2161220394,
+            "FileHash": "beb01f7a0c5f97bd3d8ca122f2de1c92",
+            "FileCRC": "60a3b832",
+            "FileSize": 2833632,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_common.bundle",
+            "UnityCRC": 1645269140,
+            "FileHash": "c1e0c3099e3d319de3c82fcbeea895cf",
+            "FileCRC": "4c534809",
+            "FileSize": 585368,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_hsart.bundle",
+            "UnityCRC": 4189711828,
+            "FileHash": "1ad7dbdb1109b0d2c6ba5d82b1532aca",
+            "FileCRC": "d44a868f",
+            "FileSize": 26192,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_armor.bundle",
+            "UnityCRC": 38569888,
+            "FileHash": "e2a5eaa0c4281e54fa3988e07d954103",
+            "FileCRC": "b23b139d",
+            "FileSize": 266756,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_arrow.bundle",
+            "UnityCRC": 48260382,
+            "FileHash": "57850f777a730d49b1185d1252b269cf",
+            "FileCRC": "70b703a9",
+            "FileSize": 265451,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_boots.bundle",
+            "UnityCRC": 544278591,
+            "FileHash": "c65f8011117c26523f4c5f16ee4309b1",
+            "FileCRC": "d2fe0157",
+            "FileSize": 23584,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_bow.bundle",
+            "UnityCRC": 56230678,
+            "FileHash": "6bfc6cab4b4fa34cff3d67ffbf7ced4d",
+            "FileCRC": "8c219fca",
+            "FileSize": 266656,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_gloves.bundle",
+            "UnityCRC": 2427570538,
+            "FileHash": "543c8d04dde852317b5979d6d0d7ca74",
+            "FileCRC": "8817c180",
+            "FileSize": 17952,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_helmet.bundle",
+            "UnityCRC": 1395183136,
+            "FileHash": "2dbb892a2490647a472fcea425ca5a09",
+            "FileCRC": "4655bd9a",
+            "FileSize": 56349,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_meleeweapon1h.bundle",
+            "UnityCRC": 2157841199,
+            "FileHash": "4d0ff2cbbdca9bb0bba5574b3eed7747",
+            "FileCRC": "c02287e2",
+            "FileSize": 71867,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_meleeweapon2h.bundle",
+            "UnityCRC": 3819602375,
+            "FileHash": "37e01083a5ee32df1dd93f0d7d741d50",
+            "FileCRC": "52ccdcf4",
+            "FileSize": 71908,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_other_misc.bundle",
+            "UnityCRC": 3944876258,
+            "FileHash": "56d60f0397131cdd82ad323aee0cf8a0",
+            "FileCRC": "cef1df0a",
+            "FileSize": 20419,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_other_ring.bundle",
+            "UnityCRC": 4028884761,
+            "FileHash": "4bccfdda236d0bff2a5c4b4967289353",
+            "FileCRC": "b24b410b",
+            "FileSize": 265807,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_icons_shield.bundle",
+            "UnityCRC": 3927481478,
+            "FileHash": "f6f3c8a3ae004a6dc8392103d1a66bd7",
+            "FileCRC": "5208b5e4",
+            "FileSize": 265752,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_itembackgrounds.bundle",
+            "UnityCRC": 4151553786,
+            "FileHash": "af3c64a29139211b51bbcb6993568a93",
+            "FileCRC": "87a72a4a",
+            "FileSize": 81015,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_light.bundle",
+            "UnityCRC": 1526063379,
+            "FileHash": "a66fe16af915f8c4fb7695898fe08642",
+            "FileCRC": "991fbfa8",
+            "FileSize": 59598,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_normal_ui_set_a.bundle",
+            "UnityCRC": 2085371786,
+            "FileHash": "55ed7f4bc6b4699b1b4e3eb6ca27d840",
+            "FileCRC": "bc1ad9b8",
+            "FileSize": 2560971,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_addres_joystick_pack_sprites_all_axis_backgrounds.bundle",
+            "UnityCRC": 2066313638,
+            "FileHash": "66d2c832fa617b01dce5088b31144ce3",
+            "FileCRC": "f2c973fd",
+            "FileSize": 12508,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_addres_joystick_pack_sprites_handles.bundle",
+            "UnityCRC": 456008748,
+            "FileHash": "558901a2455a8bc374f95963d390ab93",
+            "FileCRC": "8ed7de1c",
+            "FileSize": 7700,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_prefabs.bundle",
+            "UnityCRC": 2361323914,
+            "FileHash": "c06a10dacc1f7ea7797bdd000df308e1",
+            "FileCRC": "12e178e8",
+            "FileSize": 31720,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                7,
+                26,
+                31
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_unityshaders.bundle",
+            "UnityCRC": 3879944957,
+            "FileHash": "ff399a43cf0305bf4011c06b1ab39b88",
+            "FileCRC": "be034a88",
+            "FileSize": 51386,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        }
+    ]
+}

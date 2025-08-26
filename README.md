@@ -79,6 +79,7 @@ unity 连接mongoDB 示例在[LoginUI.cs](./TEngine/UnityProject/Assets/GameScri
 ## YooAsset打包问题，ab包有问题导致图片不显示，场景等物体变紫色
 1. 把图片等资源删除，重新加载进来，新建换一个目录，在yooasset中设置好重新打包。
 2. 场景等物体删除在重新打包
+3. 不支持此材质
 
 ## 网络模块 没有 测
 
@@ -478,3 +479,41 @@ http://localhost:15672/
 1. 游戏中模型显示粉色的情况你一定碰到过吧，是Shader丢失呢，还是Shader不符合当前平台呢，又或者是Shader上有语法的错误呢？如果我们有了解并学会Shader的话，这些问题就不会再是一脸懵逼啦。
 2. 內建Unity Shader仅仅只是“通用”用例，不足以满足我们所有的画面表现需求。一旦掌握Shader，可以为游戏/应用创造独一无二的视觉享受。根据实际需求，为游戏和应用实现特定功能的Shader。
 3. 能大大的帮助我们做渲染上的性能优化，因为通过Shader可以控制渲染什么以及如何渲染。
+
+## 序列化
+```c#
+//MessagePack MessagePackSerializer 与 Newtonsoft.Json JsonConvert 区别  
+//使用 MessagePack 的好处只是序列化出来的内容的长度小，但是从性能等方面，其实和 Json 差别不大，在序列化简单的类的时候，可以看到 MessagePack 的序列化速度会比较快。在序列化比较大的类如果序列化到文件，那么因为文件读写的性能，可以看到 MessagePack 的性能明显比 json 好。
+public override void LoadMem(byte[] data,bool isOld)
+        {
+            //Debug.Info("加载数据:" + jsondata);
+            if (isOld)
+            {
+                _gameLogic.DeskMem = JsonConvert.DeserializeObject<DeskMem>(Encoding.UTF8.GetString(data));
+            }
+            else
+            {
+                _gameLogic.DeskMem = MessagePackSerializer.Deserialize<DeskMem>(data);
+            }
+        }
+//DeskMem 中的类要打上标签
+    [MessagePackObject]
+    public class DeskMem
+    {
+        [IgnoreMember]
+        [JsonIgnore]
+        public bool IsTest;
+
+        [IgnoreMember]
+        [JsonIgnore]
+        public Queue<sbyte>[] ZhuaPaiTest;
+        
+        [Key(0)]
+        public GameDeskMem GameDeskMem;
+
+        [Key(1)]
+        public GameResult GameResultMem;
+......
+	}
+
+```

@@ -1,4 +1,4 @@
-Shader "Custom/HsShader2"
+Shader "Hs/HsShader2"
 {
     Properties
     {

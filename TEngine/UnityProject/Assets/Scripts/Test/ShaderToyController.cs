@@ -1,12 +1,14 @@
 using System;
+using TEngine;
 using UnityEngine;
 
 [ExecuteInEditMode]
 public class ShaderToyController : MonoBehaviour
 {
-    public Shader shaderToy;    //要显示的Shader
-    private Material shaderToyMaterial = null;      //显示Shader的材质球
-
+    public Shader shaderToy;        // 主Shader
+    public Shader defaultShader;    // 默认Shader
+    private Material shaderToyMaterial = null;
+    private bool hasLoggedUnsupportedShader = false;
     public Material Material
     {
         get
@@ -18,29 +20,98 @@ public class ShaderToyController : MonoBehaviour
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        Graphics.Blit (source, destination, Material);
+        Graphics.Blit(source, destination, Material);
     }
 
     Material GetMat(Shader shader, Material material)
     {
-        //如果Shader为空，返回空
-        if(shader == null) 
+        if (shader == null)
         {
+            Log.Error("提供的Shader为null！");
             return null;
         }
 
-        //如果Shader不被支持，则返回空
-        if (!shader.isSupported)
+        // 如果材质已存在且使用的是同一个Shader，直接返回
+        if (material != null && material.shader == shader)
         {
-            return null;
-        }
-        else
-        {   //用此Shader创建临时材质，并返回
-            material = new Material(shader)
-            {
-                hideFlags = HideFlags.DontSave
-            };
             return material;
         }
+
+        if (!shader.isSupported)
+        {
+            if (!hasLoggedUnsupportedShader)
+            {
+                Log.Info("主Shader不支持，尝试使用默认Shader...");
+                hasLoggedUnsupportedShader = true;
+            }
+
+            if (defaultShader != null && defaultShader.isSupported)
+            {
+                shader = defaultShader;
+            }
+            else
+            {
+                Shader fallbackShader = FindFallbackShader();
+                if (fallbackShader != null && fallbackShader.isSupported)
+                {
+                    return CreateMaterial(fallbackShader);
+                }
+                else
+                {
+                    Log.Error("无法找到任何可用的Shader！");
+                    return null;
+                }
+            }
+        }
+
+        // 如果材质已存在但Shader不同，则销毁旧材质
+        if (material != null && material.shader != shader)
+        {
+            DestroyImmediate(material);
+            material = null;
+        }
+
+        return CreateMaterial(shader);
     }
+
+
+    Material CreateMaterial(Shader shader)
+    {
+        Material material = new Material(shader)
+        {
+            hideFlags = HideFlags.DontSave
+        };
+        return material;
+    }
+
+    Shader FindFallbackShader()
+    {
+        string[] candidates = new string[]
+        {
+            "Unlit/Color",
+            "Standard",
+            "Legacy Shaders/Diffuse",
+            "Hidden/InternalErrorShader"
+        };
+
+        foreach (var name in candidates)
+        {
+            Shader candidate = Shader.Find(name);
+            if (candidate != null && candidate.isSupported)
+            {
+                Log.Info($"使用回退Shader: {name}");
+                return candidate;
+            }
+        }
+
+        return null;
+    }
+    void OnDestroy()
+    {
+        if (shaderToyMaterial != null)
+        {
+            DestroyImmediate(shaderToyMaterial);
+        }
+    }
+
 }

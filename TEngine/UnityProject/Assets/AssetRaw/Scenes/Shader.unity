@@ -221,3 +221,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shaderToy: {fileID: 4800000, guid: f8ced6009d109d84bbb514cd87fc2eb0, type: 3}
+  defaultShader: {fileID: 4800000, guid: 48c96d4206d730a43929e766e97855df, type: 3}

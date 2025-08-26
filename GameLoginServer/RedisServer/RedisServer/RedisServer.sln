@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisServer", "RedisServer\RedisServer.csproj", "{EF3F587A-B26C-4C01-B7C4-91386B03DBAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF3F587A-B26C-4C01-B7C4-91386B03DBAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3F587A-B26C-4C01-B7C4-91386B03DBAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3F587A-B26C-4C01-B7C4-91386B03DBAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3F587A-B26C-4C01-B7C4-91386B03DBAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
